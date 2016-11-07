@@ -10,19 +10,19 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>75adc8f8-16b3-4bd0-8951-5349d07c3a61</PackageIdentityName>
     <PackageIdentityPublisher>CN=adri_</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\AutoSuggestBoxApp.exe">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\AutoSuggestBoxApp.exe">
       <PackagePath>entrypoint\AutoSuggestBoxApp.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adri_\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -334,50 +334,50 @@
     <AppxPackagedFile Include="C:\Users\adri_\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\Nombres.xml">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\Nombres.xml">
       <PackagePath>Nombres.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\AutoSuggestBoxApp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\AutoSuggestBoxApp.xr.xml">
       <PackagePath>AutoSuggestBoxApp.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\Core\AutoSuggestBoxApp.exe">
+    <AppxPackagedFile Include="C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\bin\x86\Debug\Core\AutoSuggestBoxApp.exe">
       <PackagePath>AutoSuggestBoxApp.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -1,1 +1,1 @@
-C:\Users\adri_\Source\Repos\Visualstudio\AutoSuggestBoxApp\AutoSuggestBoxApp\AutoSuggestBoxApp.csproj;x86
+C:\Users\adri_\Source\Repos\VS\AutoSuggestBoxApp\AutoSuggestBoxApp\AutoSuggestBoxApp.csproj;x86

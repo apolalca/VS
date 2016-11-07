@@ -1,0 +1,10 @@
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-Ent\bin\Debug\WPFSample-Ent.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-Ent\bin\Debug\WPFSample-Ent.pdb
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.csprojResolveAssemblyReference.cache
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.pdb
+E:\WPFSample\WPFSample-Ent\bin\Debug\WPFSample-Ent.dll
+E:\WPFSample\WPFSample-Ent\bin\Debug\WPFSample-Ent.pdb
+E:\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.csprojResolveAssemblyReference.cache
+E:\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.dll
+E:\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.pdb

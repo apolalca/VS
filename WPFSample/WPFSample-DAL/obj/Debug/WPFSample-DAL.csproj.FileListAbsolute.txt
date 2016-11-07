@@ -1,0 +1,14 @@
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-DAL.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-DAL.pdb
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-Ent.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-Ent.pdb
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-DAL\obj\Debug\WPFSample-DAL.csprojResolveAssemblyReference.cache
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-DAL\obj\Debug\WPFSample-DAL.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-DAL\obj\Debug\WPFSample-DAL.pdb
+E:\WPFSample\WPFSample-DAL\obj\Debug\WPFSample-DAL.csprojResolveAssemblyReference.cache
+E:\WPFSample\WPFSample-DAL\obj\Debug\WPFSample-DAL.dll
+E:\WPFSample\WPFSample-DAL\obj\Debug\WPFSample-DAL.pdb
+E:\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-DAL.dll
+E:\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-DAL.pdb
+E:\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-Ent.dll
+E:\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-Ent.pdb

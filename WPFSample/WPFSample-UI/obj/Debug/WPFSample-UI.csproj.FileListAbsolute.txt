@@ -1,0 +1,116 @@
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\ApplicationInsights.config
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\csc.exe
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\System.Collections.Immutable.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\vbc.exe
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\VBCSCompiler.exe
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\roslyn\VBCSCompiler.exe.config
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\WPFSample-UI.dll.config
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\WPFSample-UI.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\WPFSample-UI.pdb
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.DependencyCollector.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.Web.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.WindowsServer.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.ApplicationInsights.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.Web.Infrastructure.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Helpers.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Mvc.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Razor.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Webpages.Deployment.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Webpages.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Webpages.Razor.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\WPFSample-BL.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\WPFSample-Ent.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\WPFSample-BL.pdb
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\WPFSample-Ent.pdb
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.DependencyCollector.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.Web.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.AI.WindowsServer.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.ApplicationInsights.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Razor.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Webpages.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Webpages.Deployment.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Webpages.Razor.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Helpers.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\System.Web.Mvc.xml
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\es\System.Web.Razor.resources.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\es\System.Web.Webpages.resources.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\es\System.Web.Webpages.Deployment.resources.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\es\System.Web.Webpages.Razor.resources.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\es\System.Web.Helpers.resources.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\es\System.Web.Mvc.resources.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\obj\Debug\WPFSample-UI.csprojResolveAssemblyReference.cache
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\obj\Debug\WPFSample-UI.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\obj\Debug\WPFSample-UI.pdb
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\WPFSample-DAL.dll
+E:\Sistemas de gestión\Unidades\Unidad 6\WPFSample\WPFSample-UI\bin\WPFSample-DAL.pdb
+E:\WPFSample\WPFSample-UI\bin\ApplicationInsights.config
+E:\WPFSample\WPFSample-UI\bin\roslyn\csc.exe
+E:\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\WPFSample\WPFSample-UI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\WPFSample\WPFSample-UI\bin\roslyn\System.Collections.Immutable.dll
+E:\WPFSample\WPFSample-UI\bin\roslyn\System.Reflection.Metadata.dll
+E:\WPFSample\WPFSample-UI\bin\roslyn\vbc.exe
+E:\WPFSample\WPFSample-UI\bin\roslyn\VBCSCompiler.exe
+E:\WPFSample\WPFSample-UI\bin\roslyn\VBCSCompiler.exe.config
+E:\WPFSample\WPFSample-UI\bin\WPFSample-UI.dll.config
+E:\WPFSample\WPFSample-UI\bin\WPFSample-UI.dll
+E:\WPFSample\WPFSample-UI\bin\WPFSample-UI.pdb
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.Agent.Intercept.dll
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.DependencyCollector.dll
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.Web.dll
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.WindowsServer.dll
+E:\WPFSample\WPFSample-UI\bin\Microsoft.ApplicationInsights.dll
+E:\WPFSample\WPFSample-UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\WPFSample\WPFSample-UI\bin\Microsoft.Web.Infrastructure.dll
+E:\WPFSample\WPFSample-UI\bin\System.Web.Helpers.dll
+E:\WPFSample\WPFSample-UI\bin\System.Web.Mvc.dll
+E:\WPFSample\WPFSample-UI\bin\System.Web.Razor.dll
+E:\WPFSample\WPFSample-UI\bin\System.Web.Webpages.Deployment.dll
+E:\WPFSample\WPFSample-UI\bin\System.Web.Webpages.dll
+E:\WPFSample\WPFSample-UI\bin\System.Web.Webpages.Razor.dll
+E:\WPFSample\WPFSample-UI\bin\WPFSample-BL.dll
+E:\WPFSample\WPFSample-UI\bin\WPFSample-Ent.dll
+E:\WPFSample\WPFSample-UI\bin\WPFSample-DAL.dll
+E:\WPFSample\WPFSample-UI\bin\WPFSample-BL.pdb
+E:\WPFSample\WPFSample-UI\bin\WPFSample-Ent.pdb
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.DependencyCollector.xml
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.Web.xml
+E:\WPFSample\WPFSample-UI\bin\Microsoft.AI.WindowsServer.xml
+E:\WPFSample\WPFSample-UI\bin\Microsoft.ApplicationInsights.xml
+E:\WPFSample\WPFSample-UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\WPFSample\WPFSample-UI\bin\System.Web.Razor.xml
+E:\WPFSample\WPFSample-UI\bin\System.Web.Webpages.xml
+E:\WPFSample\WPFSample-UI\bin\System.Web.Webpages.Deployment.xml
+E:\WPFSample\WPFSample-UI\bin\System.Web.Webpages.Razor.xml
+E:\WPFSample\WPFSample-UI\bin\System.Web.Helpers.xml
+E:\WPFSample\WPFSample-UI\bin\System.Web.Mvc.xml
+E:\WPFSample\WPFSample-UI\bin\WPFSample-DAL.pdb
+E:\WPFSample\WPFSample-UI\bin\es\System.Web.Razor.resources.dll
+E:\WPFSample\WPFSample-UI\bin\es\System.Web.Webpages.resources.dll
+E:\WPFSample\WPFSample-UI\bin\es\System.Web.Webpages.Deployment.resources.dll
+E:\WPFSample\WPFSample-UI\bin\es\System.Web.Webpages.Razor.resources.dll
+E:\WPFSample\WPFSample-UI\bin\es\System.Web.Helpers.resources.dll
+E:\WPFSample\WPFSample-UI\bin\es\System.Web.Mvc.resources.dll
+E:\WPFSample\WPFSample-UI\obj\Debug\WPFSample-UI.csprojResolveAssemblyReference.cache
+E:\WPFSample\WPFSample-UI\obj\Debug\WPFSample-UI.dll
+E:\WPFSample\WPFSample-UI\obj\Debug\WPFSample-UI.pdb

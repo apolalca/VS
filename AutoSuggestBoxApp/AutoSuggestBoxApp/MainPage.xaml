@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="AutoSuggestBoxApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AutoSuggestBoxApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="9*" />
+        </Grid.RowDefinitions>
+        
+        
+        <StackPanel Height="50" Background="Azure" Grid.Row="0">
+        <Grid Background="Azure">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True">
+                <AppBarButton Icon="Account" HorizontalAlignment="Left"></AppBarButton>
+                <AppBarButton Icon="Account" HorizontalAlignment="Left" ></AppBarButton>
+                <AppBarButton Icon="Account" HorizontalAlignment="Left" ></AppBarButton>
+                <AppBarButton Icon="Account" HorizontalAlignment="Left"></AppBarButton>
+            </StackPanel>
+
+            <AutoSuggestBox TextChanged="AutoSuggestBox_TextChanged"
+                                PlaceholderText="Search peoples..."
+                                QueryIcon="People"
+                                RelativePanel.AlignRightWithPanel="True"
+                                Grid.Column="1" />
+
+
+
+        </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

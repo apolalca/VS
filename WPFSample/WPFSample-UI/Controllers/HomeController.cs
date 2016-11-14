@@ -33,20 +33,51 @@ namespace WPFSample_UI.Controllers
             return View(oListadoBL.getListadoPersonasBL());
         }
 
-        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            int i;
+            clsListados_BL lista = new clsListados_BL();
+
+            if (!ModelState.IsValid)
+            {
+                return View();
+            } else
+            {
+                clsManejadoraPersonaBL manejadora = new clsManejadoraPersonaBL();
+                i = manejadora.borrarPersona(id);
+                return View("Index", lista.getListadoPersonasBL());
+            }
+                    }
+        // TODO
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // GET: Create
+        [HttpPost ]
         public ActionResult Create(clsPersona persona)
         {
             int i;
+            clsListados_BL lista = new clsListados_BL();
 
             if (!ModelState.IsValid)
             {
                 return View(persona);
-            } else
+            }
+            else
             {
-                clsManejadoraPersonaBL manejarPersona = new clsManejadoraPersonaBL();
-                i = manejarPersona.insertPersona(persona);
-                return View("Index");
+                try
+                {
+                    clsManejadoraPersonaBL manejarPersona = new clsManejadoraPersonaBL();
+                    i = manejarPersona.insertPersona(persona);
+                    return View("Index", lista.getListadoPersonasBL());
+                } catch (Exception)
+                {
+                    throw;
+                }
             }
         }
+
     }
 }

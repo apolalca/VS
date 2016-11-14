@@ -16,3 +16,12 @@ E:\WPFSample\WPFSample-BL\bin\Debug\WPFSample-Ent.pdb
 E:\WPFSample\WPFSample-BL\obj\Debug\WPFSample-BL.csprojResolveAssemblyReference.cache
 E:\WPFSample\WPFSample-BL\obj\Debug\WPFSample-BL.dll
 E:\WPFSample\WPFSample-BL\obj\Debug\WPFSample-BL.pdb
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-BL\bin\Debug\WPFSample-BL.dll
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-BL\bin\Debug\WPFSample-BL.pdb
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-BL\bin\Debug\WPFSample-DAL.dll
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-BL\bin\Debug\WPFSample-Ent.dll
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-BL\bin\Debug\WPFSample-DAL.pdb
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-BL\bin\Debug\WPFSample-Ent.pdb
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-BL\obj\Debug\WPFSample-BL.csprojResolveAssemblyReference.cache
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-BL\obj\Debug\WPFSample-BL.dll
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-BL\obj\Debug\WPFSample-BL.pdb

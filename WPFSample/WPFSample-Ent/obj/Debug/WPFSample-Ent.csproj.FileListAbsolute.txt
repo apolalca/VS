@@ -8,3 +8,8 @@ E:\WPFSample\WPFSample-Ent\bin\Debug\WPFSample-Ent.pdb
 E:\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.csprojResolveAssemblyReference.cache
 E:\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.dll
 E:\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.pdb
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-Ent\bin\Debug\WPFSample-Ent.dll
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-Ent\bin\Debug\WPFSample-Ent.pdb
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.csprojResolveAssemblyReference.cache
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.dll
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-Ent\obj\Debug\WPFSample-Ent.pdb

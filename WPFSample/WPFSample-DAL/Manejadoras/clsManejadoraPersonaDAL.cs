@@ -13,7 +13,7 @@ namespace WPFSample_DAL.Manejadoras
     {
         private clsMyConnection miConexion;
 
-        public clsMyConnection miconexion()
+        public clsMyConnection conectar()
         {
             return this.miConexion = new clsMyConnection();
         }
@@ -35,21 +35,48 @@ namespace WPFSample_DAL.Manejadoras
 
             try
             {
-               conexion = miConexion.getConnection();
-                miComando.CommandText = "INSERT INTO personas(nombre, apellidos, fechaNac, direccion, telefono) VALUES (@nombre, @apellidos, @fechanac, @direcion, @telefono)";
+                conectar();
+                conexion = miConexion.getConnection();
+                miComando.CommandText = "INSERT INTO personas(nombre, apellidos, fechaNac, direccion, telefono) VALUES (@nombre, @apellidos, @fechanac, @direccion, @telefono)";
                 miComando.Connection = conexion;
                 resultado = miComando.ExecuteNonQuery();
                 return resultado;
-            } catch (Exception)
+            } catch (Exception e)
             {
-                return resultado;
+                throw e;
+            } finally
+            {
+                conexion.Close();
+                miConexion.closeConnection(ref conexion);
             }
         }
 
-        public int borrarPersonaDAL(clsPersona persona)
+        public int borrarPersonaDAL(int id)
         {
+            int resultado = 0;
             SqlConnection conexion = new SqlConnection();
-            return 0;
+            SqlCommand miComando = new SqlCommand();
+
+            miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
+
+
+            try
+            {
+                conectar();
+                conexion = miConexion.getConnection();
+                miComando.CommandText = "DELETE FROM personas WHERE id = @id";
+                miComando.Connection = conexion;
+                // TODO
+                resultado = miComando.ExecuteNonQuery();
+            } catch(Exception) {
+                throw;
+            } finally
+            {
+                conexion.Close();
+                miConexion.closeConnection(ref conexion);
+            }
+
+            return resultado;
         }
     }
 }

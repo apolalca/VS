@@ -12,3 +12,10 @@ E:\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-DAL.dll
 E:\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-DAL.pdb
 E:\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-Ent.dll
 E:\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-Ent.pdb
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-DAL.dll
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-DAL.pdb
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-Ent.dll
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-DAL\bin\Debug\WPFSample-Ent.pdb
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-DAL\obj\Debug\WPFSample-DAL.csprojResolveAssemblyReference.cache
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-DAL\obj\Debug\WPFSample-DAL.dll
+C:\Users\apol\Source\Repos\VS\WPFSample\WPFSample-DAL\obj\Debug\WPFSample-DAL.pdb

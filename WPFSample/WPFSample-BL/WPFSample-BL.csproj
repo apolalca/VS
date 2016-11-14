@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Listados\clsListados_BL.cs" />
     <Compile Include="Manejadoras\clsManejadoraPersonaBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

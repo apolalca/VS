@@ -18,5 +18,12 @@ namespace WPFSample_BL.Manejadoras
             result = manejadoraPersona.insertarPersonaDAL(persona);
             return result;
         }
+
+        public int borrarPersona(int id)
+        {
+            int resultado;
+            resultado = manejadoraPersona.borrarPersonaDAL(id);
+            return resultado;
+        }
     }
 }

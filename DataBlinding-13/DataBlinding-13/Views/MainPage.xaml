@@ -16,9 +16,57 @@
             <ColumnDefinition Width="3*" />
             <ColumnDefinition Width="7*" />
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="9*"></RowDefinition>
+        </Grid.RowDefinitions>
 
+        <StackPanel Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
+            <AppBarButton Icon="Save" Label="Guardar" Click="saveChanges"/>
+        </StackPanel>
         
+            <ScrollViewer Name="scrLista" Grid.Column="0" Grid.Row="1">
+            <ListView ItemsSource="{Binding listado}"  SelectedItem="{Binding personaSeleccionada, Mode=TwoWay}">
 
-        <ListView Grid.Column="0" ItemsSource="{Binding listado}" DisplayMemberPath="Nombre"/>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Path=Nombre}" Width="Auto"></TextBlock>
+                            <TextBlock Text="{Binding Path=Apellidos}" Width="Auto" Margin="5, 0, 0, 0"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </ScrollViewer>
+
+            <Grid Grid.Column="1" Grid.Row="1" DataContext="{Binding personaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="6*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="6*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="Nombre:" FontSize="20" />
+                <TextBox Grid.Column="1" Name="Nombre" Grid.Row="0" Text="{Binding Nombre, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="Apellidos:" FontSize="20" />
+                <TextBox Grid.Column="1" Name="Apellido" Grid.Row="1" Text="{Binding Apellidos, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBlock Grid.Column="0" Grid.Row="2" Text="Fecha de Nacimiento::" FontSize="20" />
+                <TextBox Grid.Column="1" Name="FechaNac" Grid.Row="2" Text="{Binding FechaNac, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBlock Grid.Column="0" Grid.Row="3" Text="Telefono:" FontSize="20" />
+                <TextBox Grid.Column="1" Name="Telefono" Grid.Row="3" Text="{Binding Telefono, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <TextBlock Grid.Column="0" Grid.Row="4" Text="Descripcion:" FontSize="20" />
+                <TextBox Grid.Row="5" Name="Descripcion" Grid.ColumnSpan="2" Text="{Binding Direccion, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </Grid>
     </Grid>
 </Page>

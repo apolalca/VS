@@ -27,5 +27,15 @@ namespace DataBlinding_13
         {
             this.InitializeComponent();
         }
-    }
+
+        private void saveChanges(object sender, RoutedEventArgs e)
+        {
+            this.Nombre.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
+            this.Apellido.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
+            this.FechaNac.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
+            this.Telefono.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
+            this.Descripcion.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
+        }
+
+        }
 }

@@ -10,22 +10,51 @@
     <Page.DataContext>
         <vm:MainPageVM></vm:MainPageVM>
     </Page.DataContext>
-    
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*" />
             <ColumnDefinition Width="7*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="9*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="WindowStates">
+                <VisualState x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="scrLista.(Grid.RowSpan)" Value="3" />
+                        <Setter Target="Grid.(Grid.RowSpan)" Value="3" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!-- StackPanel de la lista-->
+                        <Setter Target="scrLista.(Grid.ColumnSpan)" Value="2" />
+                        
+                        <!-- Grid para Datos -->
+                        <Setter Target="Grid.(Grid.Row)" Value="2" />
+                        <Setter Target="Grid.(Grid.ColumnSpan)" Value="2" />
+                        <Setter Target="Grid.(Grid.Column)" Value="0" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <StackPanel Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal" Background="Azure">
             <AppBarButton Icon="Save" Label="Guardar" Click="saveChanges"/>
         </StackPanel>
         
-            <ScrollViewer Name="scrLista" Grid.Column="0" Grid.Row="1">
+            <ScrollViewer Name="scrLista" Grid.Column="0" Grid.Row="1" MinHeight="0">
             <ListView ItemsSource="{Binding listado}"  SelectedItem="{Binding personaSeleccionada, Mode=TwoWay}">
 
                 <ListView.ItemTemplate>
@@ -39,7 +68,7 @@
             </ListView>
             </ScrollViewer>
 
-            <Grid Grid.Column="1" Grid.Row="1" DataContext="{Binding personaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <Grid MinHeight="80" Name="Grid" Grid.Column="1" Grid.Row="1" DataContext="{Binding personaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=Explicit}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="6*" />
@@ -54,19 +83,19 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Grid.Column="0" Grid.Row="0" Text="Nombre:" FontSize="20" />
-                <TextBox Grid.Column="1" Name="Nombre" Grid.Row="0" Text="{Binding Nombre, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Grid.Column="1" Name="Nombre" Grid.Row="0" Text="{Binding Nombre, Mode=TwoWay, UpdateSourceTrigger=Explicit}" />
 
                 <TextBlock Grid.Column="0" Grid.Row="1" Text="Apellidos:" FontSize="20" />
-                <TextBox Grid.Column="1" Name="Apellido" Grid.Row="1" Text="{Binding Apellidos, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Grid.Column="1" Name="Apellido" Grid.Row="1" Text="{Binding Apellidos, Mode=TwoWay, UpdateSourceTrigger=Explicit}" />
 
-                <TextBlock Grid.Column="0" Grid.Row="2" Text="Fecha de Nacimiento::" FontSize="20" />
-                <TextBox Grid.Column="1" Name="FechaNac" Grid.Row="2" Text="{Binding FechaNac, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBlock Grid.Column="0" Grid.Row="2" Text="Fecha de Nacimiento:" FontSize="20" />
+            <TextBox Grid.Column="1" Name="FechaNac" Grid.Row="2" Text="{Binding FechaNac, Mode=TwoWay, UpdateSourceTrigger=Explicit}" />
 
                 <TextBlock Grid.Column="0" Grid.Row="3" Text="Telefono:" FontSize="20" />
-                <TextBox Grid.Column="1" Name="Telefono" Grid.Row="3" Text="{Binding Telefono, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Grid.Column="1" Name="Telefono" Grid.Row="3" Text="{Binding Telefono, Mode=TwoWay, UpdateSourceTrigger=Explicit}" />
 
                 <TextBlock Grid.Column="0" Grid.Row="4" Text="Descripcion:" FontSize="20" />
-                <TextBox Grid.Row="5" Name="Descripcion" Grid.ColumnSpan="2" Text="{Binding Direccion, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Grid.Row="5" Name="Descripcion" Grid.ColumnSpan="2" Text="{Binding Direccion, Mode=TwoWay, UpdateSourceTrigger=Explicit}" />
             </Grid>
     </Grid>
 </Page>

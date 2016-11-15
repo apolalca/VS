@@ -30,11 +30,11 @@ namespace DataBlinding_13
 
         private void saveChanges(object sender, RoutedEventArgs e)
         {
-            this.Nombre.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
-            this.Apellido.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
-            this.FechaNac.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
-            this.Telefono.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
-            this.Descripcion.GetBindingExpression(TextBlock.TextProperty).UpdateSource();
+            this.Nombre.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            this.Apellido.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            this.FechaNac.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            this.Telefono.GetBindingExpression(TextBox.TextProperty).UpdateSource();
+            this.Descripcion.GetBindingExpression(TextBox.TextProperty).UpdateSource();
         }
 
         }

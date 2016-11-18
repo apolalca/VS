@@ -25,5 +25,17 @@ namespace WPFSample_BL.Manejadoras
             resultado = manejadoraPersona.borrarPersonaDAL(id);
             return resultado;
         }
+
+        public int actualizarPersona(clsPersona persona)
+        {
+            int resultado;
+            resultado = manejadoraPersona.actualizarPersona(persona);
+            return resultado;
+        }
+
+        public clsPersona getPersona(int id)
+        {
+            return manejadoraPersona.getPersona(id);
+        }
     }
 }

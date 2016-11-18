@@ -22,7 +22,7 @@ namespace WPFSample_DAL.Listados
         {
             List<clsPersona> lista = new List<clsPersona>();
 
-            clsMyConnection miConexion = new clsMyConnection();
+            clsMyConnection miConexion = new clsMyConnection("iesnervion.database.windows.net", "WPFSample", "prueba", "iesnervion123.");
             SqlConnection conexion = new SqlConnection();
             SqlCommand miComando = new SqlCommand();
             SqlDataReader miLector;

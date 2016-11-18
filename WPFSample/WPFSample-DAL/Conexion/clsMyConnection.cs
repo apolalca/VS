@@ -29,18 +29,21 @@ namespace WPFSample
         public String dataBase { get; set; }
         public String user { get; set; }
         public String pass { get; set; }
+        public String connection { get; }
+        private Boolean onlyString;
 
         //Constructores
 
         public clsMyConnection()
         {
-            this.host = "192.168.0.161"; //IP de Fernando
+           this.host = "192.168.0.161"; //IP de Fernando
 
-            this.dataBase = "WPFSample";
+           this.dataBase = "WPFSample";
             //El primer usuario es de de la base de datos del instituto, el segundo la de casa
             this.user = "prueba";
             //this.user = "pruebaResident";
             this.pass = "123";
+            onlyString = false;
 
         }
         //Con parámetros por si quisiera cambiar las conexiones
@@ -50,6 +53,13 @@ namespace WPFSample
             this.dataBase = database;
             this.user = user;
             this.pass = pass;
+            onlyString = false;
+        }
+
+        public clsMyConnection(String url)
+        {
+            this.connection = url;
+            onlyString = true;
         }
 
 
@@ -70,7 +80,11 @@ namespace WPFSample
                 //connection.ConnectionString = "Data Source=" & My.Computer.Name & "Initial Catalog=" & _database & ";uid=" & _user & ";pwd=" & _user & ";"
                 //connection.ConnectionString = "server=(local);database=" + dataBase + ";uid=" + user + ";pwd=" + pass + ";";
                 //Muy cómoda esta forma de escribir la cadena conStringFormat, metiendo los parametros entre llaves y asignandoselo tras la coma
-                connection.ConnectionString = string.Format("server={0};database={1};uid={2};pwd={3};",host, dataBase, user, pass); //("server=(local);database={0};uid={1};pwd={2};", dataBase, user, pass)
+                if (!onlyString)
+                    connection.ConnectionString = string.Format("server={0};database={1};uid={2};pwd={3};",host, dataBase, user, pass); //("server=(local);database={0};uid={1};pwd={2};", dataBase, user, pass)
+                else
+                    connection.ConnectionString = this.connection;
+
                 connection.Open();
             }
             catch (SqlException)

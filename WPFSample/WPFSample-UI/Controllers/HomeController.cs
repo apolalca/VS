@@ -12,7 +12,10 @@ namespace WPFSample_UI.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        /// <summary>
+        /// lista las personas de la base de datos llamando a Business Logic
+        /// </summary>
+        /// <returns>Devuelt eun listado o reenvia a una paguina de error</returns>
         public ActionResult Index()
         {
             clsListados_BL oListadoBL = new clsListados_BL();
@@ -26,19 +29,27 @@ namespace WPFSample_UI.Controllers
             }
         }
 
+        /// <summary>
+        /// Compurbe si el ModelState es invalido de no ser así retorna a la vista DeleteConfirm.
+        /// </summary>
+        /// <param name="id"> Recoge el Id de la url del usuario seleccionado</param>
+        /// <returns></returns>
         public ActionResult Delete(int id)
         {
 
             if (!ModelState.IsValid)
-            {
                 return View();
-            }
-            else
-            {
-                return View("Delete");
-            }
+
+            return View("Delete");
+
         }
 
+        /// <summary>
+        /// ActionName Delete, cuando llamamos a este metodo responderá por Delete no por DeleteConfirm, este metodo será el encargado de
+        /// la vista "Confirmar borrar la persona". Llama a la Business Logic borrar persona para borrar dicha persona.
+        /// </summary>
+        /// <param name="id">Recoge el id enviado por la URL en la vista</param>
+        /// <returnsCrea una vista para devolverla al index></returns>
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirm(int id)
         {
@@ -57,7 +68,12 @@ namespace WPFSample_UI.Controllers
             return View();
         }
 
-        // GET: Create
+        /// <summary>
+        /// Crea una persona y comprueba que el estado del modelo sea valido, de ser así volveremos a llamar a Business Logic
+        /// y y le pasaremos el objeto persona para crearlo.
+        /// </summary>
+        /// <param name="persona">Objeto persona, recoge los parametros enviados por la URL</param>
+        /// <returns>Devuelve una lista y llama a Index</returns>
         [HttpPost]
         public ActionResult Create(clsPersona persona)
         {
@@ -83,6 +99,11 @@ namespace WPFSample_UI.Controllers
             }
         }
 
+        /// <summary>
+        /// Muestra un detalle de las personas en lista, simplemente llama a la Business Logic con el id para recoger la persona
+        /// </summary>
+        /// <param name="id">Recoge un id enviado por parametro -URL- (Id de la persona)</param>
+        /// <returns>Devuelve la misma vista solo que con el objeto persona</returns>
         public ActionResult Details(int id)
         {
             clsPersona p;
@@ -91,6 +112,11 @@ namespace WPFSample_UI.Controllers
             return View(p);
         }
 
+        /// <summary>
+        /// Responsable de editar la persona, llama a la Business Logic y obtiene la persona gracias al id.
+        /// </summary>
+        /// <param name="id">Id de persona enviada por parametro -URL-</param>
+        /// <returns>Vuelve a llamar al metodo Edit pero pasando el parametro persona y retorna un objeto para la vista persona</returns>
         public ActionResult Edit(int id)
         {
             clsManejadoraPersonaBL manejadora = new clsManejadoraPersonaBL();
@@ -99,7 +125,11 @@ namespace WPFSample_UI.Controllers
             return View("Edit", p);
         }
 
-        //GET: Edit
+        /// <summary>
+        /// Recoge a la persona, comprueba que que el modelo es valido y llama para actualizar la persona
+        /// </summary>
+        /// <param name="persona"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Edit(clsPersona persona)
         {

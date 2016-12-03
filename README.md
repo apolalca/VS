@@ -1,11 +1,12 @@
 # Projects of Microsoft [Visual Studio]
 
 Este repositorio depende de dos **asginaturas**:
-- Dsarrollo de Inerfaces.
+- Desarrollo de Inerfaces.
 - Sistema de Gestion Empresarial.
 
 ## Proyectos bases Activos:
 
+- [ ] WPFSample
 - [X] BindingConCommands
         
         

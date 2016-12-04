@@ -24,20 +24,39 @@
             <AppBarButton Icon="Delete" Label="Borrar" Command="{Binding eliminarPista}"  />
         </CommandBar>
 
+        
+
         <!-- Listado -->
         
         <ScrollViewer Grid.Column="0" Margin="0, 80, 0, 0" VerticalScrollBarVisibility="Auto" >
-            <ListView  Name="lst" ItemsSource="{Binding listado}" SelectedItem="{Binding pistaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Name="Nombre_Cancion" Text="{Binding Nombre_Cancion}"></TextBlock>
-                        <TextBlock Name="Nombre_Artista" Text="{Binding Nombre_Artista}"></TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+            <ListView  
+                Name="lst" ItemsSource="{Binding listado}" 
+                SelectedItem="{Binding pistaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                RightTapped="lst_RightTapped">
+                <!-- Menu flyout -->
+                <!--lst_RightTapped está en codigo behind, responsable de mostrar items -->
+                <ListView.Resources>
+                    <MenuFlyout x:Name="allContactMenu">
+                        <MenuFlyout.Items>
+                            <MenuFlyoutItem x:Name="Eliminar" Text="Eliminar" Command="{Binding eliminarPista}" />
+                        </MenuFlyout.Items>
+                    </MenuFlyout>
+                </ListView.Resources>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Name="Nombre_Cancion" Text="{Binding Nombre_Cancion}"></TextBlock>
+                            <TextBlock Name="Nombre_Artista" Text="{Binding Nombre_Artista}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
+            
+            
         </ScrollViewer>
+
+
+        
 
         <!-- Formulario -->
         <Grid Name="informacion"  Grid.Column="1" Margin="100" DataContext="{Binding pistaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=Explicit}">
@@ -62,12 +81,13 @@
 
             <TextBlock Grid.Column="0" Grid.Row="2" Text="Genero"  />
             <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Genero, Mode=TwoWay, UpdateSourceTrigger=Explicit}" Name="Genero" />
-                
+
             <TextBlock Grid.Column="0" Grid.Row="3" Text="URL" />
             <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding url, Mode=TwoWay, UpdateSourceTrigger=Explicit}" Name="URL" />
-            
+
             <TextBlock Grid.Column="0" Grid.Row="4" Text="Descripcion"  />
             <TextBox Grid.ColumnSpan="2" Grid.Row="5" Text="{Binding Nombre_Artista, Mode=TwoWay, UpdateSourceTrigger=Explicit}" Name="Descripcion" />
+
         </Grid>
     </Grid>
 </Page>

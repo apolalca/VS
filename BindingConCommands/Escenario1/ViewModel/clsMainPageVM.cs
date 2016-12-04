@@ -11,12 +11,20 @@ namespace Repoductor.ViewModel
 {
     public class MainPageVM: VMBase
     {
+
+
         #region "Atributos"
         private Pista _pistaSeleccionada;
         private ObservableCollection<Pista> _lista;
+        // Lista secundaría donde guardar las coincidencias del filtrado del autoSuggesBox
+        private ObservableCollection<Pista> _lstFiltrada;
+        private string _textoBuscar;
         public event PropertyChangedEventHandler PropertyChanged;
         private DelegateCommand _eliminarPista;
+        private DelegateCommand _actualizarLista;
         #endregion
+
+
 
         #region "Constructores"
         /// <summary>
@@ -25,14 +33,34 @@ namespace Repoductor.ViewModel
         public MainPageVM()
         {
             _lista =  Listado.lista_canciones();
-
+            _lstFiltrada = Listado.lista_canciones();
             //Important!
             _eliminarPista = new DelegateCommand(EliminarPista_Execute, EliminarPista_CanExecute);
+            _actualizarLista = new DelegateCommand(BuscarPista_Execute, BuscarPista_CanExecute);
         }
 
         #endregion
 
+
+
         #region "Propiedades"
+
+        /// <summary>
+        /// Devuelve el texto por el cual se desea filtrat.
+        /// </summary>
+        public string textoBuscar
+        {
+            set
+            {
+                _textoBuscar = value;
+                ActualizarLista();
+            }
+            get
+            {
+                return _textoBuscar;
+            }
+        }
+
         /// <summary>
         /// Devuelve una lista de <see cref="ObservableCollection{Pista}"/>
         /// </summary>
@@ -41,6 +69,12 @@ namespace Repoductor.ViewModel
             get
             {
                 return _lista;
+            }
+
+            set
+            {
+                _lista = value;
+                NotifyPropertyChanged("listado");
             }
         }
 
@@ -79,7 +113,35 @@ namespace Repoductor.ViewModel
 
         #endregion
 
+
+
         #region "Metodos"
+
+        /// <summary>
+        /// Actualiza la lista filtrandola por el <see cref="_textoBuscar"/> y la introduce en <see cref="listado"/>.
+        /// De no ser asu y estar <see cref="_textoBuscar"/> vacio volvera a rellenar <see cref="listado"/>.
+        /// </summary>
+        private void ActualizarLista()
+        {
+
+            if (!string.IsNullOrEmpty(_textoBuscar))
+            {
+                listado = new ObservableCollection<Pista>();
+                // Si no esta vacio se filtra y se vuelve a introducir en la variable listado
+                var lst = _lstFiltrada.Where(x => x.Nombre_Artista.StartsWith(_textoBuscar));
+
+                // Si encuentra algo lo mete en el listado, de no ser asi crea un pista con informacion de no encontrado.
+                if (lst.Count<Pista>() != 0)
+                    listado = new ObservableCollection<Pista>(lst);
+                else
+                    (listado = new ObservableCollection<Pista>()).Add(new Pista("No found", "", "", ""));
+
+            } else
+            {
+                // Si esta vacio se introduce de nuevo el listado completo
+                listado = Listado.lista_canciones();
+            }
+        }
 
         /// <summary>
         /// Cuando la propiedad cambie será noticado a <see cref="PropertyChanged"/>.
@@ -87,15 +149,45 @@ namespace Repoductor.ViewModel
         /// </summary>
         /// <param name="v">cadena de entrada, la cadena debe ser igual que el nombre del metodo.</param>
         /// <remarks>La cadena de entrada debe ser igual al nombre</remarks>
-         [Obsolete("Este metodo esta obsoleto por favor use la clase DelegateCommand(NotifyPropertyChanged).")]
+        [Obsolete("Este metodo esta obsoleto por favor use la clase DelegateCommand(NotifyPropertyChanged).")]
         private void OnPropietyChange(string v)
         {
             // Invocacion automatica equivale a:
             // if (handler != null)
             //      handler(this, new PropertyChangedEventArgs(v));
-            
+
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(v));
 
+        }
+
+        /// <summary>
+        /// Elimina de la lista una pista.
+        /// </summary>
+        /// <param name="p">Pista seleccionada que se va a eliminar</param>
+        public void eliminar(Pista p)
+        {
+            _lista.Remove(p);
+        }
+
+        #region "DeleteCommand Metodos"
+
+        /// <summary>
+        /// Al parecer no deja poner un true habria que sobrecargar el constructor, asi que se ha decidido crear este metodo por sencillex y rapidez
+        /// antes que crear dicho metodo y toparnos con problemas inesperados.
+        /// </summary>
+        /// <returns>boolean siempre true</returns>
+       private bool BuscarPista_CanExecute()
+        {
+            return true;
+        }
+
+        /// <summary>
+        /// Ejecuta el metodo que filtrará la lista.
+        /// </summary>
+        private void BuscarPista_Execute()
+        {
+            // Aqui va una copia de ActualizarLista para evitar copia de codigo y seguir la logica de encapsular llamaremos al metodo
+            ActualizarLista();
         }
 
         /// <summary>
@@ -118,14 +210,7 @@ namespace Repoductor.ViewModel
             _pistaSeleccionada = null;
         }
 
-        /// <summary>
-        /// Elimina de la lista una pista.
-        /// </summary>
-        /// <param name="p">Pista seleccionada que se va a eliminar</param>
-        public void eliminar(Pista p)
-        {
-            _lista.Remove(p);
-        }
+        #endregion
 
         #endregion
     }

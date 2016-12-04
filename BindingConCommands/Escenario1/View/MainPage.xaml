@@ -24,7 +24,11 @@
             <AppBarButton Icon="Delete" Label="Borrar" Command="{Binding eliminarPista}"  />
         </CommandBar>
 
-        
+        <!-- Barra para filtrar las busquedas -->
+        <AutoSuggestBox Margin="0,8,0,0" 
+                        QueryIcon="Find"
+                        PlaceholderText="Buscar" 
+                        Text="{Binding textoBuscar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 
         <!-- Listado -->
         

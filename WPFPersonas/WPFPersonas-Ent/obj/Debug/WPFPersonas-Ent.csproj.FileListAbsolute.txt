@@ -1,0 +1,4 @@
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-Ent\bin\Debug\WPFPersonas-Ent.dll
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-Ent\bin\Debug\WPFPersonas-Ent.pdb
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-Ent\obj\Debug\WPFPersonas-Ent.dll
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-Ent\obj\Debug\WPFPersonas-Ent.pdb

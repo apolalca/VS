@@ -1,0 +1,24 @@
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-UI.exe.config
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-UI.exe
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-UI.pdb
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-BL.dll
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-Ent.dll
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-DAL.dll
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-BL.pdb
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-Ent.pdb
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-DAL.pdb
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.csprojResolveAssemblyReference.cache
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\View\MainWindow.g.cs
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\App.g.cs
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI_MarkupCompile.cache
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI_MarkupCompile.lref
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\View\MainWindow.baml
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.g.resources
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas_UI.Properties.Resources.resources
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.csproj.GenerateResource.Cache
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.exe
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.pdb
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-UI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\apol\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-UI.exe.config
+C:\Users\apol\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.exe
+C:\Users\apol\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.pdb

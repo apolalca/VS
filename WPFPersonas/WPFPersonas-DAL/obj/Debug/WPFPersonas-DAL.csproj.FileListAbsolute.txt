@@ -1,0 +1,7 @@
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\bin\Debug\WPFPersonas-DAL.dll
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\bin\Debug\WPFPersonas-DAL.pdb
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\bin\Debug\WPFPersonas-Ent.dll
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\bin\Debug\WPFPersonas-Ent.pdb
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\obj\Debug\WPFPersonas-DAL.csprojResolveAssemblyReference.cache
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\obj\Debug\WPFPersonas-DAL.dll
+c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\obj\Debug\WPFPersonas-DAL.pdb

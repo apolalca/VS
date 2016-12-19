@@ -24,5 +24,10 @@ namespace WPFPersonas_UI
         {
             InitializeComponent();
         }
+
+        private void cmdDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

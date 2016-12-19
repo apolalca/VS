@@ -5,3 +5,10 @@ c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\
 c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\obj\Debug\WPFPersonas-DAL.csprojResolveAssemblyReference.cache
 c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\obj\Debug\WPFPersonas-DAL.dll
 c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-DAL\obj\Debug\WPFPersonas-DAL.pdb
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-DAL\bin\Debug\WPFPersonas-DAL.dll
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-DAL\bin\Debug\WPFPersonas-DAL.pdb
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-DAL\bin\Debug\WPFPersonas-Ent.dll
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-DAL\bin\Debug\WPFPersonas-Ent.pdb
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-DAL\obj\Debug\WPFPersonas-DAL.csprojResolveAssemblyReference.cache
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-DAL\obj\Debug\WPFPersonas-DAL.dll
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-DAL\obj\Debug\WPFPersonas-DAL.pdb

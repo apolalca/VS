@@ -7,3 +7,12 @@ c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-BL\b
 c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-BL\obj\Debug\WPFPersonas-BL.csprojResolveAssemblyReference.cache
 c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-BL\obj\Debug\WPFPersonas-BL.dll
 c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-BL\obj\Debug\WPFPersonas-BL.pdb
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-BL\bin\Debug\WPFPersonas-BL.dll
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-BL\bin\Debug\WPFPersonas-BL.pdb
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-BL\bin\Debug\WPFPersonas-DAL.dll
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-BL\bin\Debug\WPFPersonas-Ent.dll
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-BL\bin\Debug\WPFPersonas-DAL.pdb
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-BL\bin\Debug\WPFPersonas-Ent.pdb
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-BL\obj\Debug\WPFPersonas-BL.csprojResolveAssemblyReference.cache
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-BL\obj\Debug\WPFPersonas-BL.dll
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-BL\obj\Debug\WPFPersonas-BL.pdb

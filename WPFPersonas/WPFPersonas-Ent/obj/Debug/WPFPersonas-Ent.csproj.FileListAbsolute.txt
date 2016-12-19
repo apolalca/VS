@@ -2,3 +2,8 @@ c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-Ent\
 c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-Ent\bin\Debug\WPFPersonas-Ent.pdb
 c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-Ent\obj\Debug\WPFPersonas-Ent.dll
 c:\users\apol\documents\visual studio 2015\Projects\WPFPersonas\WPFPersonas-Ent\obj\Debug\WPFPersonas-Ent.pdb
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-Ent\bin\Debug\WPFPersonas-Ent.dll
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-Ent\bin\Debug\WPFPersonas-Ent.pdb
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-Ent\obj\Debug\WPFPersonas-Ent.csprojResolveAssemblyReference.cache
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-Ent\obj\Debug\WPFPersonas-Ent.dll
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-Ent\obj\Debug\WPFPersonas-Ent.pdb

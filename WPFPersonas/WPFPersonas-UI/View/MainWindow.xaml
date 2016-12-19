@@ -20,7 +20,7 @@
                 <Button ToolTip="Save" Name="cmdSave" >
                     <Image Source="/Assets/save.png"></Image>
                 </Button>
-                <Button ToolTip="Delete" Name="cmdDelete" Command="{Binding eliminarCommand, UpdateSourceTrigger=Explicit}">
+                <Button ToolTip="Delete" Name="cmdDelete" Command="{Binding eliminarCommand, UpdateSourceTrigger=PropertyChanged}" Click="cmdDelete_Click">
                     <Image Source="/Assets/delete.png"></Image>
                 </Button>
                 <Button ToolTip="Edit" Name="cmdEdit">

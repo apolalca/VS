@@ -10,19 +10,19 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>9cd62de9-fab8-4114-9ecb-dfabe2d027de</PackageIdentityName>
     <PackageIdentityPublisher>CN=adripol94</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\bin\x86\Debug\ExamenCartas.exe">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\ExamenCartas.exe">
       <PackagePath>entrypoint\ExamenCartas.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adripol94\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -334,86 +334,86 @@
     <AppxPackagedFile Include="C:\Users\adripol94\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\AR-15.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\AR-15.jpg">
       <PackagePath>Assets\AR-15.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Ballesta.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Ballesta.jpg">
       <PackagePath>Assets\Ballesta.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Colt.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Colt.jpg">
       <PackagePath>Assets\Colt.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Daryl.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Daryl.jpg">
       <PackagePath>Assets\Daryl.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\grey.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\grey.jpg">
       <PackagePath>Assets\grey.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Katana.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Katana.jpg">
       <PackagePath>Assets\Katana.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Lucille.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Lucille.jpg">
       <PackagePath>Assets\Lucille.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Martillo.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Martillo.jpg">
       <PackagePath>Assets\Martillo.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Michonne.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Michonne.jpg">
       <PackagePath>Assets\Michonne.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Negan.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Negan.jpg">
       <PackagePath>Assets\Negan.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Rick.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Rick.jpg">
       <PackagePath>Assets\Rick.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Sasha.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Sasha.jpg">
       <PackagePath>Assets\Sasha.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Tyreese.jpg">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Tyreese.jpg">
       <PackagePath>Assets\Tyreese.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\bin\x86\Debug\ExamenCartas.xr.xml">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\ExamenCartas.xr.xml">
       <PackagePath>ExamenCartas.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\bin\x86\Debug\Core\ExamenCartas.exe">
+    <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\Core\ExamenCartas.exe">
       <PackagePath>ExamenCartas.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

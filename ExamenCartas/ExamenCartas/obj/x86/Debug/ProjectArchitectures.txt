@@ -1,1 +1,1 @@
-C:\Users\adripol94\Documents\Visual Studio 2015\Projects\ExamenCartas\ExamenCartas\ExamenCartas.csproj;x86
+C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\ExamenCartas.csproj;x86

@@ -10,30 +10,32 @@
     <Page.DataContext>
         <vm:MainPageVM />
     </Page.DataContext>
-    
+
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <RelativePanel Name="Nav">
-            <AppBarButton Name="Reiniciar" 
+
+        <RelativePanel x:Name="Nav">
+            <AppBarButton x:Name="Reiniciar" 
                           Icon="Refresh"
                           Click="Reiniciar_Click" 
+                          Label="Reiniciar el juego"
                           Command="{Binding Restart}"
                           RelativePanel.AlignLeftWithPanel="True"/>
             <Border BorderBrush="Aqua" 
                     BorderThickness="1"
                     RelativePanel.AlignRightWithPanel="True">
-                <TextBlock Name="Reloj"/>
+                <TextBlock x:Name="Reloj"/>
             </Border>
         </RelativePanel>
 
-        <GridView x:Name="Tarjetas" ItemsSource="{Binding Lista,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
-                  SelectedItem="{Binding Seleccionada,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
-                  Margin="0, 40, 0, 0" IsItemClickEnabled="{Binding isClickOk}">
+        <GridView x:Name="Tarjetas" ItemsSource="{Binding Lista, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                  SelectedItem="{Binding Seleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                  Margin="0, 40, 0, 0">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <Border BorderBrush="Black" BorderThickness="2" Width="100" Height="100">
                         <Image Source="{Binding img}" 
-                               Visibility="{Binding Visible,UpdateSourceTrigger=PropertyChanged}"/>
+                               Visibility="{Binding Visible, UpdateSourceTrigger=PropertyChanged}"/>
                     </Border>
                 </DataTemplate>
             </GridView.ItemTemplate>

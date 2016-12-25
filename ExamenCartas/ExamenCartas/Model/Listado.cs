@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace ExamenCartas.Model
 {
+    //Puede llegar a pertenecer a BL porque es un requisito de la empresa que las cartas sean aleatorias
+    // pero para simplificar el proyecto tendremos en cuenta que debe ir en la BL pero lo dejaremos aquí.
     public static class Listado
     {
         private static ObservableCollection<Carta> listado;
@@ -15,8 +17,8 @@ namespace ExamenCartas.Model
         {
             Random aleatorio = new Random();
             int n;
-            bool[] nYaSalidos = new bool[11];
-           
+            bool[] nYaSalidos;
+
             listado = new ObservableCollection<Carta>();
             ObservableCollection<Carta> aux = new ObservableCollection<Carta>();
             int nIntroducido = 0; //Contador perteneciente al numero de veces que se ha introducido una carta en listado.
@@ -37,37 +39,24 @@ namespace ExamenCartas.Model
             aux.Add(new Carta("/Assets/Negan.jpg", 4));
             aux.Add(new Carta("/Assets/Tyreese.jpg", 5));
 
+            nYaSalidos = new bool[aux.Count];
+
             //Dara vueltas hasta que nIntroducido tome un valor de 12, en ese momento quedrá decir que ha introducido las 12 cartas en listado satisfactoriamente
             // y podrá salir.
-            // TODO Se repuiten numeros, ultimo codigo tocado el _IsClickOk en MainPage
-            for (int i = 0; nIntroducido != 12; i++)
+            for (int i = 0; nIntroducido < aux.Count; i++)
             {
-                n = aleatorio.Next(0, aux.Count - 1);
+                n = aleatorio.Next(0, aux.Count);
 
                 if (!nYaSalidos.ElementAt(n))
                 {
                     nIntroducido++;
                     listado.Add(aux.ElementAt(n));
+                    nYaSalidos[n] = true;
                 }
-            
+
             }
 
             return listado;
         }
-
-        public static ObservableCollection<Carta> lista
-        {
-            get
-            {
-                if (listado == null)
-                    throw new Exception("listado no se ha inicializado!");
-                return listado;
-            }
-            set
-            {
-                listado = value;
-            }
-        }
-
     }
 }

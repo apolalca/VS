@@ -14,6 +14,13 @@ namespace ExamenCartas.Model
         private int _id;
         private Visibility _visible;
 
+        /// <summary>
+        /// Hemos comprobado que las cartas selecionadas si son correctas se marcan pero si vuelves a marcar una carta 
+        ///correcta con otra <see cref="MainPage"/> las dos cartas y como son incorrectas la pone en Collapsed, para arreglar esto
+        /// usamos un <see cref="bool"/>para evitar que la vuelva a checkear.
+        /// </summary>
+        private bool _block;
+
         public Carta() { }
 
         public Carta(string img, int id)
@@ -21,6 +28,7 @@ namespace ExamenCartas.Model
             this._img = img;
             this._id = id;
             _visible = Visibility.Collapsed;
+            _block = false;
         }
 
         public Carta(string img, string nombre, int id)
@@ -41,6 +49,19 @@ namespace ExamenCartas.Model
             {
                 _visible = value;
                 NotifyPropertyChanged("Visible");
+            }
+        }
+
+        public bool Block
+        {
+            get
+            {
+                return _block;
+            }
+            set
+            {
+                _block = value;
+                NotifyPropertyChanged("Block");
             }
         }
 

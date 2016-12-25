@@ -141,9 +141,9 @@ namespace ExamenCartas.ExamenCartas_XamlTypeInfo
             _typeNameTable[5] = "ExamenCartas.Model.Carta";
             _typeNameTable[6] = "ExamenCartas.Model.INotifyClass";
             _typeNameTable[7] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[8] = "String";
-            _typeNameTable[9] = "Int32";
-            _typeNameTable[10] = "Boolean";
+            _typeNameTable[8] = "Boolean";
+            _typeNameTable[9] = "String";
+            _typeNameTable[10] = "Int32";
             _typeNameTable[11] = "ExamenCartas.ViewModel.DelegateCommand";
             _typeNameTable[12] = "ExamenCartas.MainPage";
             _typeNameTable[13] = "Windows.UI.Xaml.Controls.Page";
@@ -158,9 +158,9 @@ namespace ExamenCartas.ExamenCartas_XamlTypeInfo
             _typeTable[5] = typeof(global::ExamenCartas.Model.Carta);
             _typeTable[6] = typeof(global::ExamenCartas.Model.INotifyClass);
             _typeTable[7] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[8] = typeof(global::System.String);
-            _typeTable[9] = typeof(global::System.Int32);
-            _typeTable[10] = typeof(global::System.Boolean);
+            _typeTable[8] = typeof(global::System.Boolean);
+            _typeTable[9] = typeof(global::System.String);
+            _typeTable[10] = typeof(global::System.Int32);
             _typeTable[11] = typeof(global::ExamenCartas.ViewModel.DelegateCommand);
             _typeTable[12] = typeof(global::ExamenCartas.MainPage);
             _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.Page);
@@ -233,7 +233,6 @@ namespace ExamenCartas.ExamenCartas_XamlTypeInfo
                 userType = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ExamenCartas.ViewModel.VMBase"));
                 userType.Activator = Activate_0_MainPageVM;
                 userType.AddMemberName("Lista");
-                userType.AddMemberName("IsClickOk");
                 userType.AddMemberName("CartaUno");
                 userType.AddMemberName("CartaDos");
                 userType.AddMemberName("Restart");
@@ -271,6 +270,7 @@ namespace ExamenCartas.ExamenCartas_XamlTypeInfo
                 userType = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("ExamenCartas.Model.INotifyClass"));
                 userType.Activator = Activate_5_Carta;
                 userType.AddMemberName("Visible");
+                userType.AddMemberName("Block");
                 userType.AddMemberName("img");
                 userType.AddMemberName("id");
                 userType.SetIsLocalType();
@@ -288,15 +288,15 @@ namespace ExamenCartas.ExamenCartas_XamlTypeInfo
                 xamlType = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  String
+            case 8:   //  Boolean
                 xamlType = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 9:   //  Int32
+            case 9:   //  String
                 xamlType = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  Boolean
+            case 10:   //  Int32
                 xamlType = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
@@ -346,30 +346,35 @@ namespace ExamenCartas.ExamenCartas_XamlTypeInfo
             var that = (global::ExamenCartas.Model.Carta)instance;
             that.Visible = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_2_Carta_img(object instance)
+        private object get_2_Carta_Block(object instance)
+        {
+            var that = (global::ExamenCartas.Model.Carta)instance;
+            return that.Block;
+        }
+        private void set_2_Carta_Block(object instance, object Value)
+        {
+            var that = (global::ExamenCartas.Model.Carta)instance;
+            that.Block = (global::System.Boolean)Value;
+        }
+        private object get_3_Carta_img(object instance)
         {
             var that = (global::ExamenCartas.Model.Carta)instance;
             return that.img;
         }
-        private void set_2_Carta_img(object instance, object Value)
+        private void set_3_Carta_img(object instance, object Value)
         {
             var that = (global::ExamenCartas.Model.Carta)instance;
             that.img = (global::System.String)Value;
         }
-        private object get_3_Carta_id(object instance)
+        private object get_4_Carta_id(object instance)
         {
             var that = (global::ExamenCartas.Model.Carta)instance;
             return that.id;
         }
-        private void set_3_Carta_id(object instance, object Value)
+        private void set_4_Carta_id(object instance, object Value)
         {
             var that = (global::ExamenCartas.Model.Carta)instance;
             that.id = (global::System.Int32)Value;
-        }
-        private object get_4_MainPageVM_IsClickOk(object instance)
-        {
-            var that = (global::ExamenCartas.ViewModel.MainPageVM)instance;
-            return that.IsClickOk;
         }
         private object get_5_MainPageVM_CartaUno(object instance)
         {
@@ -426,23 +431,23 @@ namespace ExamenCartas.ExamenCartas_XamlTypeInfo
                 xamlMember.Getter = get_1_Carta_Visible;
                 xamlMember.Setter = set_1_Carta_Visible;
                 break;
+            case "ExamenCartas.Model.Carta.Block":
+                userType = (global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ExamenCartas.Model.Carta");
+                xamlMember = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlMember(this, "Block", "Boolean");
+                xamlMember.Getter = get_2_Carta_Block;
+                xamlMember.Setter = set_2_Carta_Block;
+                break;
             case "ExamenCartas.Model.Carta.img":
                 userType = (global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ExamenCartas.Model.Carta");
                 xamlMember = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlMember(this, "img", "String");
-                xamlMember.Getter = get_2_Carta_img;
-                xamlMember.Setter = set_2_Carta_img;
+                xamlMember.Getter = get_3_Carta_img;
+                xamlMember.Setter = set_3_Carta_img;
                 break;
             case "ExamenCartas.Model.Carta.id":
                 userType = (global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ExamenCartas.Model.Carta");
                 xamlMember = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlMember(this, "id", "Int32");
-                xamlMember.Getter = get_3_Carta_id;
-                xamlMember.Setter = set_3_Carta_id;
-                break;
-            case "ExamenCartas.ViewModel.MainPageVM.IsClickOk":
-                userType = (global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ExamenCartas.ViewModel.MainPageVM");
-                xamlMember = new global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlMember(this, "IsClickOk", "Boolean");
-                xamlMember.Getter = get_4_MainPageVM_IsClickOk;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Getter = get_4_Carta_id;
+                xamlMember.Setter = set_4_Carta_id;
                 break;
             case "ExamenCartas.ViewModel.MainPageVM.CartaUno":
                 userType = (global::ExamenCartas.ExamenCartas_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ExamenCartas.ViewModel.MainPageVM");

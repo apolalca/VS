@@ -3,7 +3,6 @@
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Lista" />
     <RootPropertyPathName Name="Seleccionada" />
-    <RootPropertyPathName Name="isClickOk" />
     <RootPropertyPathName Name="img" />
     <RootPropertyPathName Name="Visible" />
     <RootPropertyPathName Name="Restart" />
@@ -23,7 +22,6 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
-      <RootProperty Name="Name" />
       <RootProperty Name="Children" />
       <RootMethod Name="GetAlignLeftWithPanel" />
       <RootMethod Name="SetAlignLeftWithPanel" />
@@ -56,14 +54,12 @@
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Name" />
       <RootProperty Name="Icon" />
+      <RootProperty Name="Label" />
       <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Name" />
-    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock" />
     <RootType FullName="ExamenCartas.MainPage" />
   </Roots.RootTypes>
 </Roots>

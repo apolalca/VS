@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-25T12:51:55.504</Modified>
+      <Modified>2016-12-28T18:22:54.058</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\ExamenCartas.exe">
       <PackagePath>entrypoint\ExamenCartas.exe</PackagePath>
-      <Modified>2016-12-25T12:51:54.297</Modified>
+      <Modified>2016-12-28T18:22:51.781</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adripol94\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -540,7 +540,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\ExamenCartas.xr.xml">
       <PackagePath>ExamenCartas.xr.xml</PackagePath>
-      <Modified>2016-12-25T12:51:53.980</Modified>
+      <Modified>2016-12-25T13:07:14.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -549,11 +549,11 @@
     <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-25T12:51:55.164</Modified>
+      <Modified>2016-12-25T13:07:19.292</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\adripol94\Source\Repos\VS\ExamenCartas\ExamenCartas\bin\x86\Debug\Core\ExamenCartas.exe">
       <PackagePath>ExamenCartas.exe</PackagePath>
-      <Modified>2016-12-25T12:51:55.497</Modified>
+      <Modified>2016-12-28T18:22:54.052</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

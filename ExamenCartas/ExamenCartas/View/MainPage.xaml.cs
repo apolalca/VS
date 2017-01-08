@@ -23,7 +23,7 @@ namespace ExamenCartas
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private Stopwatch reloj;
+        private static Stopwatch reloj;
 
         public MainPage()
         {
@@ -38,14 +38,14 @@ namespace ExamenCartas
             reloj.Start();
         }
 
-        private void timer_Tick(object sender, object e)
+        private static void timer_Tick(object sender, object e)
         {
             Reloj.Text = string.Format("{0}:{1}:{2}", reloj.Elapsed.Hours.ToString(),
                 reloj.Elapsed.Minutes.ToString(),
                 reloj.Elapsed.Seconds.ToString());
         }
 
-        private void Reiniciar_Click(object sender, RoutedEventArgs e)
+        public static void Reiniciar_Click(object sender, RoutedEventArgs e)
         {
             reloj.Restart();
         }

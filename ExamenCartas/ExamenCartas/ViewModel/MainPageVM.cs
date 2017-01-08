@@ -182,7 +182,8 @@ namespace ExamenCartas.ViewModel
 
         private void finJuego()
         {
-            mostrarDialogo("Enhorabuena has ganado!!, ha terminado el juego en ");
+            mostrarDialogo("Enhorabuena has ganado!!, ha terminado el juego");
+            
             restartd_Execute();
         }
 
@@ -239,6 +240,8 @@ namespace ExamenCartas.ViewModel
 
             CartaUno = null;
             CartaDos = null;
+
+            nAciertos = 0;
 
             Lista = Listado.startList();
         }

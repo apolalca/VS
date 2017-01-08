@@ -23,8 +23,6 @@ C:\Users\apol\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-U
 C:\Users\apol\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.exe
 C:\Users\apol\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.pdb
 C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-UI.exe.config
-C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.exe
-C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.pdb
 C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-UI.exe
 C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-UI.pdb
 C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\bin\Debug\WPFPersonas-BL.dll
@@ -43,3 +41,5 @@ C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\View\Mai
 C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.g.resources
 C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas_UI.Properties.Resources.resources
 C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.csproj.GenerateResource.Cache
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.exe
+C:\Users\adripol94\Source\Repos\VS\WPFPersonas\WPFPersonas-UI\obj\Debug\WPFPersonas-UI.pdb

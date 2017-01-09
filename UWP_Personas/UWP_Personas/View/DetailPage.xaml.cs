@@ -7,12 +7,14 @@ using UWP_Personas.Model;
 using UWP_Personas.ViewModel;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -34,6 +36,7 @@ namespace UWP_Personas.View
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        [System.Obsolete("use SystemNavigationManager")]
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
@@ -55,6 +58,10 @@ namespace UWP_Personas.View
             {
                 MostrarErorr();
             }
+
+            SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
+            systemNavigationManager.BackRequested += DetailPage_BackRequested;
+            systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
         }
 
         /// <summary>
@@ -69,19 +76,29 @@ namespace UWP_Personas.View
             await dialog.ShowAsync();
         }
 
-        /*private void AppBarButton_PointerCanceled(object sender, PointerRoutedEventArgs e)
+        private void DetailPage_BackRequested(object sender, BackRequestedEventArgs e)
         {
+            // Mark event as handled so we don't get bounced out of the app.
+            e.Handled = true;
 
+            OnBackRequested();
         }
 
-        private void RemoveButton_Click(object sender, RoutedEventArgs e)
+        private void OnBackRequested()
         {
-            
+            // Page above us will be our master view.
+            // Make sure we are using the "drill out" animation in this transition.
+
+            Frame.GoBack(new DrillInNavigationTransitionInfo());
+        }
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+
+            SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
+            systemNavigationManager.BackRequested -= DetailPage_BackRequested;
+            systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        } */
     }
 }

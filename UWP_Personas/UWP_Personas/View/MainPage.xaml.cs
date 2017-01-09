@@ -42,7 +42,7 @@ namespace UWP_Personas
             if (MasterHide.CurrentState == Movil)
             {
                 Persona p = (Persona)e.ClickedItem;
-                Frame.Navigate(typeof(DetailPage), p);
+                Frame.Navigate(typeof(DetailPage), p, new DrillInNavigationTransitionInfo());
             }
         }
 
@@ -58,7 +58,7 @@ namespace UWP_Personas
             if (MasterHide.CurrentState == Movil)
             {
                 Persona p = new Persona();
-                Frame.Navigate(typeof(DetailPage), p);
+                Frame.Navigate(typeof(DetailPage), p, new DrillInNavigationTransitionInfo());
             }
         }
     }

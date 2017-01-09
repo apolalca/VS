@@ -1,0 +1,1 @@
+C:\Users\apol\Source\Repos\VS\UWP_Personas\UWP_Personas\UWP_Personas.csproj;x64

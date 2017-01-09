@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="UWP_Personas.View.DetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP_Personas.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:UWP_Personas.ViewModel"
+    mc:Ignorable="d">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition />
+        </TransitionCollection>
+    </Page.Transitions>
+    <Page.DataContext>
+        <vm:MainPageVM x:ConnectionId='1' x:Name="ViewModelPersonas" />
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--Menu de commandos-->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="Azure">
+            <AppBarButton x:ConnectionId='8' Icon="Delete" Label="Borrar" Command="{Binding BorrarCommand}"                          />
+            <AppBarButton x:ConnectionId='9' Icon="Save" Label="Guardar" Command="{Binding GuardarCommand}"                          />
+        </StackPanel>
+
+        <!--CRUD-->
+        <Grid x:ConnectionId='2' x:Name="CRUD" Grid.Row="1" Margin="0,20,0,0" DataContext="{Binding PersonaSeleccionada}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="6*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="6*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Nombre:" FontSize="20" />
+            <TextBox x:ConnectionId='3' Grid.Column="1" Name="Nombre" Grid.Row="0" Text="{Binding nombre, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Column="0" Grid.Row="1" Text="Apellidos:" FontSize="20" />
+            <TextBox x:ConnectionId='4' Grid.Column="1" Name="Apellido" Grid.Row="1" Text="{Binding apellido, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Column="0" Grid.Row="2" Text="Fecha de Nacimiento:" FontSize="20" />
+            <TextBox x:ConnectionId='5' Grid.Column="1" Name="FechaNac" Grid.Row="2" Text="{Binding fechaNac, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Column="0" Grid.Row="3" Text="Telefono:" FontSize="20" />
+            <TextBox x:ConnectionId='6' Grid.Column="1" Name="Telefono" Grid.Row="3" Text="{Binding telefono, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Column="0" Grid.Row="4" Text="Descripcion:" FontSize="20" />
+            <TextBox x:ConnectionId='7' Grid.Row="5" Name="Descripcion" Grid.ColumnSpan="2" Text="{Binding direccion, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+        </Grid>
+    </Grid>
+</Page>
+

@@ -9,8 +9,10 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel PointerPressed="StackPanel_PointerPressed">
-            
-            
+            <Rectangle Fill="Red" Height="50" Margin="10"/>
+            <Rectangle Fill="Green" Height="50" Margin="10"/>
+            <Rectangle Fill="Blue" Height="50" Margin="10"/>
         </StackPanel>
+        <StackPanel x:Name="response" />
     </Grid>
 </Page>

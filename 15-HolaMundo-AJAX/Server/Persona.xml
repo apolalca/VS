@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<personas>
+  <persona>
+    <nombre>Javier</nombre>
+    <apellido>Rodolfo</apellido>
+  </persona>
+  <persona>
+    <nombre>Fernando</nombre>
+    <apellido>Galiana</apellido>
+  </persona>
+</personas>

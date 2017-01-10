@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo1-MainPage", "21-Res
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo2-Diccionario", "Ejemplo2-Aplicacion\Ejemplo2-Diccionario.csproj", "{CA773EAD-4CBA-46BE-B084-1695210B63E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{8154241E-C935-42B7-B80F-99B6F6859B47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejemplo3-Application", "Application\Ejemplo3-Application.csproj", "{8154241E-C935-42B7-B80F-99B6F6859B47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

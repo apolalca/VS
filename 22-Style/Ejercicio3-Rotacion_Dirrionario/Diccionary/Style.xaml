@@ -1,0 +1,23 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ejercicio3_Rotacion_Dirrionario.Diccionary">
+
+    <Style TargetType="Button">
+        <Setter Property="Control.FontFamily" Value="Times New Romana" />
+        <Setter Property="Control.Background" Value="Azure" />
+        <Setter Property="Foreground" Value="Gray" />
+        <Setter Property="Control.Padding" Value="10" />
+        <Setter Property="Control.Margin" Value="20" />
+        
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <RotateTransform Angle="25"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    
+
+
+</ResourceDictionary>

@@ -7,7 +7,8 @@ Este repositorio depende de dos **asginaturas**:
 ## Proyectos bases Activos:
 
 - [ ] WPFSample
-- [X] BindingConCommands
+- [ ] BindingConCommands
+- [X] DomoticHome
         
         
         

@@ -16,11 +16,32 @@
                 <TextBlock Foreground="White" Margin="5,5,5,5">Domotic House</TextBlock>
             </Viewbox>
         </Border>
-        <StackPanel Background="Blue" Grid.Row="2" >
-            <Ellipse>
-                <!--http://timheuer.com/blog/archive/2015/05/06/making-circular-images-in-xaml-easily.aspx-->
+        <Grid Background="Blue" Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="6*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <!--http://timheuer.com/blog/archive/2015/05/06/making-circular-images-in-xaml-easily.aspx-->
+            <!--http://stackoverflow.com/questions/13177529/wpf-ellipse-with-backgroundcolor-and-image-->
+            <Ellipse Grid.Column="1" Fill="White" MaxWidth="500" />
+            <Ellipse Grid.Column="1"  Stroke="White" StrokeThickness="40" MaxWidth="600">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Assets/generic-avatar-500x500[1].png" Stretch="UniformToFill" />
+                </Ellipse.Fill>
             </Ellipse>
-        </StackPanel>
+
+            <Viewbox Grid.Column="1" Grid.Row="1" Margin="0, 30, 0, 30">
+                <Button Background="White" Content="Login" />
+            </Viewbox>
+            <Viewbox Grid.Column="1" Grid.Row="2" Margin="0, 30, 0, 30">
+                <Button Background="White" Content="Registrarse" />
+            </Viewbox>
+        </Grid>
     </Grid>
-   
 </Page>

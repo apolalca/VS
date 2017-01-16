@@ -11,37 +11,38 @@
             <RowDefinition Height="0.2*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Border Grid.Row="0" Background="DarkBlue">
+        <Border Grid.Row="0" Background="#CC193E91">
             <Viewbox>
                 <TextBlock Foreground="White" Margin="5,5,5,5">Domotic House</TextBlock>
             </Viewbox>
         </Border>
-        <Grid Background="Blue" Grid.Row="1" >
+        <Grid Background="#1081CA" Grid.Row="1" >
+            
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition x:Name="Colum1" Width="2.5*"/>
+                <ColumnDefinition x:Name="Colum2"  Width="2*"/>
+                <ColumnDefinition x:Name="Colum3" Width="2.5*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="6*" />
-                <RowDefinition Height="2*" />
-                <RowDefinition Height="2*" />
+                <RowDefinition x:Name="foto" Height="6*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="0.5*" />
             </Grid.RowDefinitions>
-            <!--http://timheuer.com/blog/archive/2015/05/06/making-circular-images-in-xaml-easily.aspx-->
-            <!--http://stackoverflow.com/questions/13177529/wpf-ellipse-with-backgroundcolor-and-image-->
-            <Ellipse Grid.Column="1" Fill="White" MaxWidth="500" />
-            <Ellipse Grid.Column="1"  Stroke="White" StrokeThickness="40" MaxWidth="600">
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="../Assets/generic-avatar-500x500[1].png" Stretch="UniformToFill" />
-                </Ellipse.Fill>
-            </Ellipse>
 
-            <Viewbox Grid.Column="1" Grid.Row="1" Margin="0, 30, 0, 30">
-                <Button Background="White" Content="Login" Click="Button_Click"/>
-            </Viewbox>
-            <Viewbox Grid.Column="1" Grid.Row="2" Margin="0, 30, 0, 30">
-                <Button Background="White" Content="Registrarse" />
-            </Viewbox>
+            <Image Grid.Column="1" Source="../Assets/users-user-male-4-icon.png" />
+
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Margin="20, 20, 20,20">
+                <TextBlock Text="Usuario" HorizontalAlignment="Center" FontSize="20" Foreground="White"/>
+                <TextBox Margin="0, 10, 0, 0" MaxWidth="500"></TextBox>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Grid.ColumnSpan="3" Margin="20, 20, 20,20">
+                <TextBlock Text="Constraseña" HorizontalAlignment="Center" FontSize="20" Foreground="White"/>
+                <TextBox Margin="0, 10, 0, 0" MaxWidth="500"></TextBox>
+                <Button Content="Enviar" Foreground="White" Background="#FF193E91" HorizontalAlignment="Center" Margin="0, 20, 0, 0" Click="Enviar_Click"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>

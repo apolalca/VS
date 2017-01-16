@@ -6,29 +6,63 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid>
+    <Grid Background="#1081CA">
         <!--https://blogs.msdn.microsoft.com/quick_thoughts/2015/06/01/windows-10-splitview-build-your-first-hamburger-menu/ -->
         <!--https://msdn.microsoft.com/en-us/windows/uwp/style/segoe-ui-symbol-font-->
-        <SplitView x:Name="HmburgerMenu" DisplayMode="CompactOverlay" IsPaneOpen="False"
-                   CompactPaneLength="50" OpenPaneLength="150">
+        <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+               CompactPaneLength="50" OpenPaneLength="150">
             <SplitView.Pane>
-                <StackPanel Background="DarkBlue" >
+                <StackPanel Background="Gray">
                     <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;"
                     Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
-                    <!--Home button-->
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:Name="MenuButton1" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;"
-                    Width="50" Height="50" Background="Transparent"/>
-                        <TextBlock Text="Pagina Principal" FontSize="14" VerticalAlignment="Center" />
-                    </StackPanel>
-                    <!--TODO More buttons-->
+
+                    <Button x:Name="MenuButton1"
+                    Width="auto" Height="auto" Background="Transparent">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" VerticalAlignment="Center" Text="&#xE1D6;" Margin="0, 0, 5, 0" />
+                                <TextBlock Text="Button 1" FontSize="18" VerticalAlignment="Center" Visibility="Collapsed" />
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                    <Button x:Name="MenuButton2"
+                    Width="auto" Height="auto" Background="Transparent">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" VerticalAlignment="Center" Text="&#xE1D6;" Margin="0, 0, 5, 0" />
+                                <TextBlock Text="Button 1" FontSize="18" VerticalAlignment="Center" Visibility="Collapsed" />
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                    <Button x:Name="MenuButton3"
+                    Width="auto" Height="auto" Background="Transparent">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" VerticalAlignment="Center" Text="&#xE1D6;" Margin="0, 0, 5, 0" />
+                                <TextBlock Text="Button 1" FontSize="18" VerticalAlignment="Center" Visibility="Collapsed" />
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
+
+                    <Button x:Name="MenuButton4"
+                    Width="auto" Height="auto" Background="Transparent">
+                        <Button.Content>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" VerticalAlignment="Center" Text="&#xE1D6;" Margin="0, 0, 5, 0" />
+                                <TextBlock Text="Button 1" FontSize="18" VerticalAlignment="Center" Visibility="Collapsed" />
+                            </StackPanel>
+                        </Button.Content>
+                    </Button>
                 </StackPanel>
             </SplitView.Pane>
             <SplitView.Content>
                 <Grid>
-                    
+                    <TextBlock Text="SplitView Basic" FontSize="54" Foreground="White"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
             </SplitView.Content>
-        </SplitView> 
+        </SplitView>
     </Grid>
 </Page>

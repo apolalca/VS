@@ -28,7 +28,7 @@ namespace DomiticaDesign
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Enviar_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Menu));
         }

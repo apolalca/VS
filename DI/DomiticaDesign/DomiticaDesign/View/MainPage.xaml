@@ -11,12 +11,12 @@
             <RowDefinition Height="0.2*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Border Grid.Row="0" Background="#CC193E91">
+        <Border Grid.Row="0" Background="#6B0036">
             <Viewbox>
                 <TextBlock Foreground="White" Margin="5,5,5,5">Domotic House</TextBlock>
             </Viewbox>
         </Border>
-        <Grid Background="#1081CA" Grid.Row="1" >
+        <Grid Background="#CAE0D9" Grid.Row="1" >
             
             <Grid.ColumnDefinitions>
                 <ColumnDefinition x:Name="Colum1" Width="2.5*"/>
@@ -31,17 +31,17 @@
                 <RowDefinition Height="0.5*" />
             </Grid.RowDefinitions>
 
-            <Image Grid.Column="1" Source="../Assets/users-user-male-4-icon.png" />
+            <Image Grid.Column="1" Source="../Assets/users-user-male-4-icon.png" Margin="0, 50, 0, 0" />
 
             <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Margin="20, 20, 20,20">
-                <TextBlock Text="Usuario" HorizontalAlignment="Center" FontSize="20" Foreground="White"/>
+                <TextBlock Text="Usuario" HorizontalAlignment="Center" FontSize="20" Foreground="#6B0036"/>
                 <TextBox Margin="0, 10, 0, 0" MaxWidth="500"></TextBox>
             </StackPanel>
 
             <StackPanel Grid.Row="3" Grid.ColumnSpan="3" Margin="20, 20, 20,20">
-                <TextBlock Text="Constraseña" HorizontalAlignment="Center" FontSize="20" Foreground="White"/>
+                <TextBlock Text="Constraseña" HorizontalAlignment="Center" FontSize="20" Foreground="#6B0036"/>
                 <TextBox Margin="0, 10, 0, 0" MaxWidth="500"></TextBox>
-                <Button Content="Enviar" Foreground="White" Background="#FF193E91" HorizontalAlignment="Center" Margin="0, 20, 0, 0" Click="Enviar_Click"/>
+                <Button Content="Enviar" Foreground="#6B0036" HorizontalAlignment="Center" Margin="0, 20, 0, 0" Click="Enviar_Click"/>
             </StackPanel>
         </Grid>
     </Grid>

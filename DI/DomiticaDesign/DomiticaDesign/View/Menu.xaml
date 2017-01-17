@@ -6,75 +6,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Page.Resources>
-        <DataTemplate x:Key="Principal">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="1*" />
-                        <RowDefinition Height="2*" />
-                        <RowDefinition Height="1*" />
-                        <RowDefinition Height="5*" />
-                        <RowDefinition Height="2*" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="3*" />
-                        <ColumnDefinition Width="3*" />
-                        <ColumnDefinition Width="4*" />
-                    </Grid.ColumnDefinitions>
-
-                    <!--TODO Clicks-->
-                <Button Grid.Row="1" Grid.Column="0">
-                <Rectangle Style="{StaticResource RectangleStyle}"
-                    Width="50" Height="100" 
-                                />
-                </Button>
-
-                <Button Grid.Row="0" Grid.Column="0">
-                    <Rectangle Style="{StaticResource RectangleStyle}"
-                               Width="200" Height="100" 
-                                />
-                </Button>
-
-                <Button Grid.Row="2" Grid.Column="0">
-                    <Rectangle Style="{StaticResource RectangleStyle}"
-                               Width="200" Height="50" 
-                                />
-                </Button>
-
-                <Button Grid.Row="0" Grid.Column="3">
-                    <Rectangle Style="{StaticResource RectangleStyle}"
-                               Width="200" Height="100" 
-                                />
-                </Button>
-
-                <Button Grid.RowSpan="3" Grid.Row="1" Grid.Column="1">
-                    <Rectangle Style="{StaticResource RectangleStyle}"
-                               Width="100" Height="300" 
-                                />
-                </Button>
-
-                <Button Grid.Row="0" Grid.Column="1">
-                    <Rectangle Style="{StaticResource RectangleStyle}"
-                               Width="100" Height="200" 
-                                />
-                </Button>
-
-                <Button Grid.Row="2" Grid.Column="2">
-                    <Rectangle Style="{StaticResource RectangleStyle}"
-                               Width="200" Height="50" 
-                                />
-                </Button>
-
-                <Button Grid.Row="3" Grid.Column="0">
-                    <Rectangle Style="{StaticResource RectangleStyle}"
-                               Width="200" Height="100" 
-                                />
-                </Button>
-                
-            </Grid>
-        </DataTemplate>
-    </Page.Resources>
-  
 
     <Grid Style="{StaticResource background}">
         <!--https://blogs.msdn.microsoft.com/quick_thoughts/2015/06/01/windows-10-splitview-build-your-first-hamburger-menu/ -->
@@ -143,30 +74,11 @@
                 </StackPanel>
             </SplitView.Pane>
             <SplitView.Content>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition x:Name="Row1" Height="*" />
-                        <RowDefinition x:Name="Row2" Height="0" />
-                        <RowDefinition x:Name="Row3" Height="0" />
-                        <RowDefinition x:Name="Row4" Height="0" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    
-
-                    <ContentPresenter Name="Principal"
-                                      Grid.Row="0"
-                                      Grid.Column="0"
-                                      VerticalAlignment="Top"
-                                      Margin="0, 100, 0, 0"
-                                      HorizontalAlignment="Center"
-                                      ContentTemplate="{StaticResource Principal}">
-
-                    </ContentPresenter>
-                    
-
-                </Grid>
+                <StackPanel>
+                    <Frame Name="PrincipalFrame">
+                        
+                    </Frame>
+                </StackPanel>
             </SplitView.Content>
         </SplitView>
     </Grid>

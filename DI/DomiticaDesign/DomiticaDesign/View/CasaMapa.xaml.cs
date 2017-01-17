@@ -20,37 +20,11 @@ namespace DomiticaDesign.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Menu : Page
+    public sealed partial class CasaMapa : Page
     {
-        public Menu()
+        public CasaMapa()
         {
             this.InitializeComponent();
-            PrincipalFrame.Navigate(typeof(View.CasaMapa));
-            PrincipalFrame.Visibility = Visibility.Visible;
-        }
-
-        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
-        {
-            MySplitView.IsPaneOpen = true;
-        }
-
-        private void PaginaPrincipal_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void Luz_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Persianas_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Alarma_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

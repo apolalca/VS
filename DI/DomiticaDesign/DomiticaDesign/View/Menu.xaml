@@ -74,11 +74,7 @@
                 </StackPanel>
             </SplitView.Pane>
             <SplitView.Content>
-                <StackPanel>
-                    <Frame Name="PrincipalFrame">
-                        
-                    </Frame>
-                </StackPanel>
+                <Frame Name="PrincipalFrame" />
             </SplitView.Content>
         </SplitView>
     </Grid>

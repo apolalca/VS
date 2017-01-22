@@ -7,33 +7,31 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Hub Background="{ThemeResource AppBarBackgroundThemeBrush}">
-        <HubSection x:Name="HubSection" ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <DataTemplate>
-                
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                    <Grid x:Name="GridBase" Style="{StaticResource HomeButtonStyle}">
-                        <Button Content="Texto de prueba" Foreground="White" Background="{Binding ElementName=GridBase, Path=BorderBrush}" />
-                    </Grid>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
-                    <Grid Style="{StaticResource HomeButtonStyle}">
-                        <Button Content="Texto de prueba" Foreground="White" Background="{Binding ElementName=GridBase, Path=BorderBrush}" />
-                    </Grid>
+        <!--https://casafengshui.files.wordpress.com/2014/04/plano-rosario-bagua.jpg Idea completa-->
 
-                    <Grid Style="{StaticResource HomeButtonStyle}">
-                        <Button Content="Texto de prueba" Foreground="White" Background="{Binding ElementName=GridBase, Path=BorderBrush}" />
-                    </Grid>
-
-                    <Grid Style="{StaticResource HomeButtonStyle}">
-                        <Button Content="Texto de prueba" Foreground="White" Background="{Binding ElementName=GridBase, Path=BorderBrush}" />
-                    </Grid>
-
-                    <Grid Style="{StaticResource HomeButtonStyle}">
-                    <Button Content="Texto de prueba" Foreground="White" Background="{Binding ElementName=GridBase, Path=BorderBrush}" />
-                    </Grid>
-                </StackPanel>
-                
-            </DataTemplate>
-        </HubSection>
-    </Hub>
+        <Rectangle Fill="Red" Grid.Column="0" Grid.Row="4"/>
+        <Rectangle Fill="Green" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" />
+        <Rectangle Fill="Black" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" />
+        <Rectangle Fill="Blue" Grid.Column="2" Grid.Row="1" Grid.RowSpan="3" />
+        <Rectangle Fill="Blue" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" />
+        <Rectangle Fill="Yellow" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+        <Rectangle Fill="Brown" Grid.Column="4" Grid.Row="1" Grid.RowSpan="2"/>
+        <Rectangle Fill="Brown" Grid.Column="2" Grid.ColumnSpan="3"/>
+    </Grid>
 </Page>

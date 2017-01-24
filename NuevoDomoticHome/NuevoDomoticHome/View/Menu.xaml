@@ -1,0 +1,96 @@
+﻿<Page
+    x:Class="NuevoDomoticHome.View.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NuevoDomoticHome.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Style="{StaticResource background}">
+        <!--https://blogs.msdn.microsoft.com/quick_thoughts/2015/06/01/windows-10-splitview-build-your-first-hamburger-menu/ -->
+        <!--https://msdn.microsoft.com/en-us/windows/uwp/style/segoe-ui-symbol-font-->
+        <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+               CompactPaneLength="50" OpenPaneLength="225">
+            <SplitView.Pane>
+                <StackPanel Style="{StaticResource backgroundBar}">
+                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Foreground="#CAE0D9" Content="&#xE700;"
+                    Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click"/>
+
+
+                    <!--Pagina Principal-->
+                    <Button Click="PaginaPrincipal_Click" x:Name="MenuButton1" Style="{StaticResource ButtonStyleSplitView}" Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}" >
+                        <Button.Content>
+                            <RelativePanel Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}">
+                                <StackPanel RelativePanel.AlignLeftWithPanel="True" Style="{StaticResource SplitViewStyle}">
+                                    <TextBlock Style="{StaticResource SplitStyle}" Text="&#xE10F;" />
+                                    <TextBlock Text="Pagina Principal" Style="{StaticResource colorTxt}" />
+                                </StackPanel>
+                            </RelativePanel>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Luz-->
+                    <Button x:Name="MenuButton2"
+                            Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}"
+                            Style="{StaticResource ButtonStyleSplitView}">
+                        <Button.Content>
+                            <RelativePanel Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}">
+                                <StackPanel RelativePanel.AlignLeftWithPanel="True" Style="{StaticResource SplitViewStyle}">
+                                    <TextBlock Style="{StaticResource SplitStyle}" Text="&#xEA80;" />
+                                    <TextBlock Text="Luz" Style="{StaticResource colorTxt}"  />
+                                </StackPanel>
+                            </RelativePanel>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Perianas-->
+                    <Button x:Name="MenuButton3"
+                            Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}"
+                            Style="{StaticResource ButtonStyleSplitView}">
+                        <Button.Content>
+                            <RelativePanel Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Style="{StaticResource SplitStyle}" Text="&#xEDA8;" />
+                                    <TextBlock Text="Persianas" Style="{StaticResource colorTxt}"  />
+                                </StackPanel>
+                            </RelativePanel>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Alarma-->
+                    <Button x:Name="MenuButton4"
+                            Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}"
+                            Style="{StaticResource ButtonStyleSplitView}">
+                        <Button.Content>
+                            <RelativePanel Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Style="{StaticResource SplitStyle}" Text="&#xE1D6;" />
+                                    <TextBlock Text="Alarma" Style="{StaticResource colorTxt}" />
+                                </StackPanel>
+                            </RelativePanel>
+                        </Button.Content>
+                    </Button>
+
+                    <!--Alarma-->
+                    <Button x:Name="MenuButton5"
+                            Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}"
+                            Style="{StaticResource ButtonStyleSplitView}">
+                        <Button.Content>
+                            <RelativePanel Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Style="{StaticResource SplitStyle}" Text="&#xE1E0;" />
+                                    <TextBlock Text="Salir" Style="{StaticResource colorTxt}" />
+                                </StackPanel>
+                            </RelativePanel>
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+            </SplitView.Pane>
+            
+            <SplitView.Content>
+                <Frame Name="PrincipalFrame" />
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+</Page>

@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="_25_Combinadas.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_25_Combinadas"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Canvas Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Path Stroke="Black" StrokeThickness="1" Fill="#CCCCFF">
+            <Path.Data>
+                <GeometryGroup>
+                    <EllipseGeometry Center="100, 100" RadiusX="30" RadiusY="30"/>
+                    <EllipseGeometry Center="110, 100" RadiusX="20" RadiusY="26"/>
+                </GeometryGroup>
+            </Path.Data>
+        </Path>
+
+
+        <TextBlock x:Name="textBlock" Height="25" 
+                   Canvas.Left="520" TextWrapping="Wrap" 
+                   TextAlignment="Center" Text="Esta dentro"
+                   Canvas.Top="240" Width="100"/>
+        <Path Stroke="Black" StrokeThickness="1" Fill="#CCCCFF">
+            <Path.Data>
+                <GeometryGroup>
+                    <PathGeometry>
+                        <PathFigure StartPoint="500, 200">
+                            <LineSegment Point="570, 130" />
+                            <LineSegment Point="640, 200" />
+                            <ArcSegment Point="640, 300" Size="200, 115" />
+                            <LineSegment Point="500, 300" />
+                            <ArcSegment Point="500, 200" Size="145, 100" />
+                        </PathFigure>
+                    </PathGeometry>
+                    <EllipseGeometry RadiusX="30" RadiusY="30" Center="570, 250">
+                    </EllipseGeometry>
+                </GeometryGroup>
+            </Path.Data>
+        </Path>
+    </Canvas>
+</Page>

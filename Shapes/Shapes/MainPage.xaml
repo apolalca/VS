@@ -8,23 +8,34 @@
     mc:Ignorable="d">
     <Page.Resources>
         <Storyboard x:Name="AnimacionCirculo">
-            <ColorAnimation Storyboard.TargetName="cuadrado" Storyboard.TargetProperty="Fill.Color" To="Green" Duration="0:0:5" />
-            <DoubleAnimation Storyboard.TargetName="cuadrado" Storyboard.TargetProperty="(Canvas.Left)" From="0" To="150" Duration="0:0:5" />
-            <DoubleAnimation Storyboard.TargetName="cuadrado" Storyboard.TargetProperty="(Rectangle.RenderTransform).(RotateTransform.Angle)" From="0" To="360" RepeatBehavior="Forever" />
-            <DoubleAnimation Storyboard.TargetName="cuadrado" Storyboard.TargetProperty="Opacity" From="1.0" To="0.0" AutoReverse="True" RepeatBehavior="Forever" Duration="0:0:2" />
+            <DoubleAnimation Storyboard.TargetName="btn"
+                             Storyboard.TargetProperty="(Button.RenderTransform).(RotateTransform.Angle)" To="05" 
+                             AutoReverse="True" Duration="0:0:0.1" RepeatBehavior="0:0:1" />
         </Storyboard>
     </Page.Resources>
 
     <Canvas Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button Click="Button_Click" x:Name="btn" Canvas.Top="300" Canvas.Left="400" Width="100" Height="100" >
+            <Button.Background>
+                <SolidColorBrush Color="Red" />
+            </Button.Background>
+            <Button.RenderTransform>
+                <RotateTransform CenterX="50" CenterY="50" />
+            </Button.RenderTransform>
+        </Button>
 
-        <Rectangle Height="160" x:Name="cuadrado" Canvas.Left="160" Stroke="Red" StrokeThickness="5" Canvas.Top="400" Width="160">
-            <Rectangle.RenderTransform>
-                <RotateTransform Angle="0" CenterX="160" CenterY="160"></RotateTransform>
-            </Rectangle.RenderTransform>
-            <Rectangle.Fill>
-                <SolidColorBrush />
-            </Rectangle.Fill>
-        </Rectangle>
+        <Border x:Name="dialogo" Background="Red" Canvas.Left="505" Canvas.Top="250">
+            <TextBlock
+            x:Name="textBlock" Height="50"
+            Canvas.Left="500" TextWrapping="Wrap" Text="Click me GO GO GO GO!" 
+            Canvas.Top="250" Width="310" Visibility="Collapsed"
+            />
+        </Border>
+               
+
+
+
+
         <!-- Polygon Stroke="Red" StrokeThickness="5" Points="800, 600, 650, 320, 500, 600" -->
         <!-- <Polygon Stroke="Red" StrokeThickness="5" Points="500, 100, 500, 150, 200, 150, 170, 125, 200, 100" -->
     </Canvas>

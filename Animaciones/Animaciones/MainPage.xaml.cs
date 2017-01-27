@@ -27,6 +27,7 @@ namespace Animaciones
         public MainPage()
         {
             this.InitializeComponent();
+            this.DataContext = persons;
         }
 
         public ObservableCollection<Person> persons

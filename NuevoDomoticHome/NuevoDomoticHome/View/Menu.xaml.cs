@@ -25,6 +25,8 @@ namespace NuevoDomoticHome.View
         public Menu()
         {
             this.InitializeComponent();
+            PrincipalFrame.Navigate(typeof(homeMap));
+            FrameControl.Navigate(typeof(WelcomePage));
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
@@ -34,11 +36,12 @@ namespace NuevoDomoticHome.View
 
         private void PaginaPrincipal_Click(object sender, RoutedEventArgs e)
         {
+            FrameControl.Navigate(typeof(WelcomePage));
         }
 
         private void Luz_Click(object sender, RoutedEventArgs e)
         {
-
+            FrameControl.Navigate(typeof(Luz));
         }
 
         private void Persianas_Click(object sender, RoutedEventArgs e)
@@ -47,6 +50,11 @@ namespace NuevoDomoticHome.View
         }
 
         private void Alarma_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void toogleSwitch_Toggled(object sender, RoutedEventArgs e)
         {
 
         }

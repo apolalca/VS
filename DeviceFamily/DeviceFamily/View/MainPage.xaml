@@ -1,0 +1,103 @@
+﻿<Page
+    x:Class="DeviceFamily.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP_Personas"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:DeviceFamily.ViewModel"
+    mc:Ignorable="d">
+    <Page.DataContext>
+        <vm:MainPageVM />
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition x:Name="Detail" Width="8*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="MasterHide">
+                <VisualState x:Name="Desktop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Detail.Width" Value="8*" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Movil">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!-- Setter de la lista-->
+                        <Setter Target="Detail.Width" Value="0" />
+                        
+                        <!--Setter del menu-->
+                        <Setter Target="btnDelete.Visibility" Value="Collapsed" />
+                        <Setter Target="btnSave.Visibility" Value="Collapsed" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <!--Menu de commandos-->
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="0" Background="Azure">
+            <AppBarButton x:Name="btnDelete" Icon="Delete" Label="Borrar" Visibility="Visible" Command="{Binding BorrarCommand}" />
+            <AppBarButton Icon="Add" Label="Añadir" Command="{Binding AddNewCommand}" Click="AddClick" />
+            <AppBarButton x:Name="btnSave" Icon="Save" Label="Guardar" Visibility="Visible" Command="{Binding GuardarCommand}" />
+        </StackPanel>
+        
+        <!--Listado de personas-->
+        <ScrollViewer x:Name="ScrollLista" Grid.Column="0" Grid.Row="1">
+            <ListView x:Name="Lista" ItemsSource="{Binding Lista}" SelectedItem="{Binding PersonaSeleccionada, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemClick="Lista_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Width="100">
+                            <TextBlock Text="{Binding nombre}" />
+                            <TextBlock Text="{Binding apellido}" Margin="5,0 ,0, 0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+
+        <Grid x:Name="CRUD" Grid.Column="1" Grid.Row="1" DataContext="{Binding PersonaSeleccionada}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="8*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="6*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Nombre:" FontSize="20" />
+            <TextBox Grid.Column="1" Name="Nombre" Grid.Row="0" Text="{Binding nombre, Mode=TwoWay, UpdateSourceTrigger=Explicit}" />
+
+            <TextBlock Grid.Column="0" Grid.Row="1" Text="Apellidos:" FontSize="20" />
+            <TextBox Grid.Column="1" Name="Apellido" Grid.Row="1" Text="{Binding apellido, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Column="0" Grid.Row="2" Text="Fecha de Nacimiento:" FontSize="20" />
+            <TextBox Grid.Column="1" Name="FechaNac" Grid.Row="2" Text="{Binding fechaNac, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Column="0" Grid.Row="3" Text="Telefono:" FontSize="20" />
+            <TextBox Grid.Column="1" Name="Telefono" Grid.Row="3" Text="{Binding telefono, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+            <TextBlock Grid.Column="0" Grid.Row="4" Text="Descripcion:" FontSize="20" />
+            <TextBox Grid.Row="5" Name="Descripcion" Grid.ColumnSpan="2" Text="{Binding direccion, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+        </Grid>
+
+    </Grid>
+</Page>

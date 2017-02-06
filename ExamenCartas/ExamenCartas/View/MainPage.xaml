@@ -10,6 +10,12 @@
     <Page.DataContext>
         <vm:MainPageVM />
     </Page.DataContext>
+    <Page.Resources>
+        <Storyboard x:Name="VueltaCarta">
+            <DoubleAnimation Storyboard.TargetName="img" Storyboard.TargetProperty="(Projection).(PlaneProjection.RotationY)"
+                                 From="0" To="90" Duration="0:0:1"></DoubleAnimation>
+        </Storyboard>
+    </Page.Resources>
 
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -33,10 +39,14 @@
                   Margin="0, 40, 0, 0">
             <GridView.ItemTemplate>
                 <DataTemplate>
-                    <Border BorderBrush="Black" BorderThickness="2" Width="100" Height="100">
-                        <Image Source="{Binding img}" 
-                               Visibility="{Binding Visible, UpdateSourceTrigger=PropertyChanged}"/>
-                    </Border>
+                    <Button Name="btnImg" Click="Button_Click" BorderBrush="Black" BorderThickness="2" Width="200" Height="200">
+                        <Image x:Name="img" Source="{Binding img}"
+                               Visibility="{Binding Visible, UpdateSourceTrigger=PropertyChanged}">
+                            <Image.Projection>
+                                <PlaneProjection RotationY="0" CenterOfRotationX="0.5" />
+                            </Image.Projection>
+                        </Image>
+                    </Button>
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>

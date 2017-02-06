@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="Rotation3D.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Rotation3D"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="Rotacion">
+            <!-- Rota la imagen [80 velocidad con reverse -> la animacion total es de 160]-->
+            <DoubleAnimation Storyboard.TargetName="img"
+                             Storyboard.TargetProperty="(Image.Projection).(PlaneProjection.RotationY)" From="0" To="180" 
+                             Duration="0:0:0.80" AutoReverse="True"
+                             />
+            <!--Encargado de cargar las imagenes como si de Frame se tratase-->
+            <ObjectAnimationUsingKeyFrames 
+                BeginTime="0:0:0" 
+                 Storyboard.TargetName="img"
+                  Storyboard.TargetProperty="(Image.Source)">
+                <!--Cambio de imagen dela carta cuando esta por la mitad [80 / 2 = 40]-->
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.40">
+                    <DiscreteObjectKeyFrame.Value>
+                        <BitmapImage UriSource="Assets/carta1.png" />
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <!--Cambio de la imagen a la vuelta de atras [80 + 40 = 120]-->
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.20">
+                    <DiscreteObjectKeyFrame.Value>
+                        <BitmapImage UriSource="Assets/imagen_share.jpg" />
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button Background="Transparent" Click="Button_Click" Width="300">
+            <Image x:Name="img" Source="Assets/imagen_share.jpg">
+                <Image.Projection>
+                    <PlaneProjection RotationY="0" CenterOfRotationX="0.5" />
+                </Image.Projection>
+            </Image>
+        </Button>
+    </Grid>
+</Page>

@@ -195,3 +195,4 @@ C:\Users\apol\Source\Repos\VS\UWP_Personas\UWP_Personas\obj\x64\Debug\qualifiers
 C:\Users\apol\Source\Repos\VS\UWP_Personas\UWP_Personas\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\apol\Source\Repos\VS\UWP_Personas\UWP_Personas\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\apol\Source\Repos\VS\UWP_Personas\UWP_Personas\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\apol\Source\Repos\VS\UWP_Personas\UWP_Personas\obj\x64\Debug\UWP_Personas.csprojResolveAssemblyReference.cache

@@ -7,6 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:UWP_Personas.ViewModel"
     mc:Ignorable="d">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition />
+        </TransitionCollection>
+    </Page.Transitions>
     <Page.DataContext>
         <vm:MainPageVM x:ConnectionId='1' x:Name="ViewModelPersonas" />
     </Page.DataContext>
@@ -19,9 +24,8 @@
 
         <!--Menu de commandos-->
         <StackPanel Orientation="Horizontal" Grid.Row="0" Background="Azure">
-            <AppBarButton x:ConnectionId='8' Icon="Back" Label="Atras"                          />
-            <AppBarButton x:ConnectionId='9' Icon="Delete" Label="Borrar" Command="{Binding BorrarCommand}"                          />
-            <AppBarButton x:ConnectionId='10' Icon="Save" Label="Guardar" Command="{Binding GuardarCommand}"                          />
+            <AppBarButton x:ConnectionId='8' Icon="Delete" Label="Borrar" Command="{Binding BorrarCommand}"                          />
+            <AppBarButton x:ConnectionId='9' Icon="Save" Label="Guardar" Command="{Binding GuardarCommand}"                          />
         </StackPanel>
 
         <!--CRUD-->

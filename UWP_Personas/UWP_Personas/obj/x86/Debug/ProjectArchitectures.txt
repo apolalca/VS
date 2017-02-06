@@ -1,1 +1,1 @@
-C:\Users\adripol94\Source\Repos\VS\UWP_Personas\UWP_Personas\UWP_Personas.csproj;x86
+C:\Users\apol\Source\Repos\VS\UWP_Personas\UWP_Personas\UWP_Personas.csproj;x86

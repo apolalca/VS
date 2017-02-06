@@ -10,7 +10,7 @@
     <Grid Style="{StaticResource background}">
         <!--https://blogs.msdn.microsoft.com/quick_thoughts/2015/06/01/windows-10-splitview-build-your-first-hamburger-menu/ -->
         <!--https://msdn.microsoft.com/en-us/windows/uwp/style/segoe-ui-symbol-font-->
-        <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+        <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay" IsPaneOpen="False" 
                CompactPaneLength="50" OpenPaneLength="225">
             <SplitView.Pane>
                 <StackPanel Style="{StaticResource backgroundBar}">
@@ -31,7 +31,7 @@
                     </Button>
 
                     <!--Luz-->
-                    <Button x:Name="MenuButton2"
+                    <Button Click="Luz_Click" x:Name="MenuButton2"
                             Width="{Binding ElementName=MySplitView, Path=OpenPaneLength}"
                             Style="{StaticResource ButtonStyleSplitView}">
                         <Button.Content>
@@ -89,7 +89,72 @@
             </SplitView.Pane>
             
             <SplitView.Content>
-                <Frame Name="PrincipalFrame" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="5*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="6*" />
+                        <RowDefinition Height="4*" />
+                    </Grid.RowDefinitions>
+                    <Frame Name="PrincipalFrame" Grid.Column="1" Padding="5" Grid.Row="0"/>
+
+                    <!--FILA 1__________________________________________________________________________-->
+                    <RelativePanel MinHeight="100" MinWidth="100" Padding="5" Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="0, 0, 0, 2">
+                        <!--Boton de selección de Cocina-->
+                        <ToggleSwitch Toggled="toogleSwitch_Toggled" Margin="10, 0, 0, 0" x:Name="toogleRed" OffContent="No Seleccionado" OnContent="Seleccionado" />
+                        <Border BorderBrush="White"  BorderThickness="1" Background="#FFB900" RelativePanel.RightOf="toogleRed" RelativePanel.AlignVerticalCenterWith="toogleRed" Height="20" Margin="10">
+                            <TextBlock Foreground="White" Text="Dormitorio 1"/>
+                        </Border>
+
+                        <!--Boton de selección de Salon-->
+                        <ToggleSwitch Margin="10, 0, 0, 0"  x:Name="toogleYellow" RelativePanel.Below="toogleRed" OffContent="No Seleccionado" OnContent="Seleccionado" AllowDrop="True" />
+                        <Border BorderBrush="White"  BorderThickness="1" Background="#0099BC" RelativePanel.AlignVerticalCenterWith="toogleYellow" RelativePanel.RightOf="toogleYellow" Margin="10">
+                            <TextBlock Foreground="White"  Text="Dormitorio 2"/>
+                        </Border>
+
+                        <!--Boton de selección de Salon-->
+                        <ToggleSwitch Margin="10, 0, 0, 0" x:Name="toogleBlak" RelativePanel.Below="toogleYellow" OffContent="No Seleccionado" OnContent="Seleccionado" AllowDrop="True" />
+                        <Border BorderBrush="White"  BorderThickness="1" Background="#00B7C3" RelativePanel.AlignVerticalCenterWith="toogleBlak" RelativePanel.RightOf="toogleBlak" Margin="10">
+                            <TextBlock Foreground="White"  Text="Salon" Height="20"/>
+                        </Border>
+
+                        <!--Boton de selección de Salon-->
+                        <ToggleSwitch  Margin="10, 0, 0, 0" x:Name="toogleGreen" RelativePanel.Below="toogleBlak" OffContent="No Seleccionado" OnContent="Seleccionado" AllowDrop="True" />
+                        <Border BorderBrush="White"  BorderThickness="1" Background="#D13438" RelativePanel.AlignVerticalCenterWith="toogleGreen" RelativePanel.RightOf="toogleGreen" Margin="10">
+                            <TextBlock Foreground="White" Text="Dormitorio Pral." Height="20"/>
+                        </Border>
+                    
+                        <!--Boton de selección de Salon-->
+                        <ToggleSwitch  Margin="10, 0, 0, 0" x:Name="toogleBlue" RelativePanel.Below="toogleGreen" OffContent="No Seleccionado" OnContent="Seleccionado" AllowDrop="True" />
+                        <Border BorderBrush="White"  BorderThickness="1" Background="#498205" RelativePanel.AlignVerticalCenterWith="toogleBlue" RelativePanel.RightOf="toogleBlue" Margin="10">
+                            <TextBlock Foreground="White" Text="Baño 1" Height="20"/>
+                        </Border>
+
+                        <!--Boton de selección de Salon-->
+                        <ToggleSwitch  Margin="10, 0, 0, 0" x:Name="toogleBrown" RelativePanel.Below="toogleBlue" OffContent="No Seleccionado" OnContent="Seleccionado" AllowDrop="True" />
+                        <Border BorderBrush="White"  BorderThickness="1" Background="#00cc6A" RelativePanel.AlignVerticalCenterWith="toogleBrown" RelativePanel.RightOf="toogleBrown" Margin="10">
+                            <TextBlock Foreground="White" Text="Baño Pral." Height="20"/>
+                        </Border>
+
+                        <!--Boton de selección de Salon-->
+                        <ToggleSwitch Margin="10, 0, 0, 0" x:Name="toogleWhite" RelativePanel.Below="toogleBrown" OffContent="No Seleccionado" OnContent="Seleccionado" AllowDrop="True" />
+                        <Border  BorderBrush="Black"  BorderThickness="1" Background="White" RelativePanel.AlignVerticalCenterWith="toogleWhite" RelativePanel.RightOf="toogleWhite" Margin="10">
+                            <TextBlock Foreground="Black" Text="Cocina" Height="20"/>
+                        </Border>
+
+                        <!--Boton de selección de Salon-->
+                        <ToggleSwitch Margin="10, 0, 0, 0" x:Name="tooglePink" RelativePanel.Below="toogleWhite" OffContent="No Seleccionado" OnContent="Seleccionado" AllowDrop="True" />
+                        <Border BorderBrush="White"  BorderThickness="1" Background="Blue" RelativePanel.AlignVerticalCenterWith="tooglePink" RelativePanel.RightOf="tooglePink" Margin="10">
+                            <TextBlock Foreground="White" Text="Exteriores" Height="20"/>
+                        </Border>
+
+                    </RelativePanel>
+                    
+                    <!--Controles Frame-->
+                    <Frame Name="FrameControl" Grid.ColumnSpan="2" Grid.Row="1" />
+                </Grid>
             </SplitView.Content>
         </SplitView>
     </Grid>

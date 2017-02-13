@@ -7,20 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="Intensidad: " RelativePanel.AlignTopWith="slider" Margin="50, 0, 0, 0"/>
-        <Slider ValueChanged="slider_ValueChanged" Margin="50" x:Name="slider" RelativePanel.AlignHorizontalCenterWithPanel="True"
-                    RelativePanel.AlignVerticalCenterWithPanel="True"
-                    RelativePanel.AlignRightWithPanel="True"
-                    RelativePanel.AlignLeftWithPanel="True" Maximum="100" StepFrequency="0"
-                    />
-        <Rectangle Fill="Yellow" Name="rectangle"
-                   Margin="10"
-                   RelativePanel.AlignBottomWith="slider"
-                   RelativePanel.AlignHorizontalCenterWithPanel="True"
-                    RelativePanel.AlignVerticalCenterWithPanel="True"
-                    RelativePanel.AlignRightWithPanel="True"
-                    RelativePanel.AlignLeftWithPanel="True"
-                   Height="30"/>
+    <RelativePanel Background="{ThemeResource AppBarBackgroundThemeBrush}" Padding="20">
+        <Slider x:Name="slider"  ValueChanged="Slider_ValueChanged"
+                RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignRightWithPanel="True"
+                RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignLeftWithPanel="True"/>
+        
+        <Rectangle x:Name="rctLight" Fill="Yellow" RelativePanel.Above="slider" RelativePanel.AlignRightWithPanel="True" Height="20"
+                   RelativePanel.AlignVerticalCenterWithPanel="True" Opacity="0.0"
+                   RelativePanel.AlignLeftWithPanel="True"/>
     </RelativePanel>
 </Page>

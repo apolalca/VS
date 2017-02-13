@@ -20,17 +20,11 @@ namespace NuevoDomoticHome.View
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class Luz : Page
+    public sealed partial class Persianas : Page
     {
-        public Luz()
+        public Persianas()
         {
             this.InitializeComponent();
-        }
-
-        private void Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {
-            double n = slider.Value;
-            rctLight.Opacity = n / 100;
         }
     }
 }

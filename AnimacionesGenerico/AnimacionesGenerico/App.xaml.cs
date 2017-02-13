@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using static AnimacionesGenerico.MainPage;
 
 namespace AnimacionesGenerico
 {
@@ -31,6 +32,12 @@ namespace AnimacionesGenerico
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
+
+        //SE HA AÑADIDO LA RELOCUION SIZE!!!!!!
+        /// <summary> 
+        /// strore the screen resolution size. 
+        /// </summary> 
+        public static Size ScreenResolutionSize;
 
         /// <summary>
         /// Se invoca cuando el usuario final inicia la aplicación normalmente. Se usarán otros puntos
@@ -63,6 +70,9 @@ namespace AnimacionesGenerico
 
                 // Poner el marco en la ventana actual.
                 Window.Current.Content = rootFrame;
+                //RESOLUCION SIZE
+                Window.Current.Activate();
+                ScreenResolutionSize = ScreenResolutionHelper.GetScreenResolutionInfo();
             }
 
             if (e.PrelaunchActivated == false)

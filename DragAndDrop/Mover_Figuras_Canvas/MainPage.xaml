@@ -17,6 +17,7 @@
                 <CompositeTransform x:Name="mytransform" />
             </Image.RenderTransform>
         </Image>
+        <Rectangle x:Name="BunaPos" Fill="Black" Margin="0,110,200,0" HorizontalAlignment="Right" Width="200" Height="150" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

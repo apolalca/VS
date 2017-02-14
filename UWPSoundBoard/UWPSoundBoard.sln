@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Blend for Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWPSoundBoard", "UWPSoundBoard\UWPSoundBoard.csproj", "{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Debug|ARM.Build.0 = Debug|ARM
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Debug|ARM.Deploy.0 = Debug|ARM
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Debug|x64.ActiveCfg = Debug|x64
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Debug|x64.Build.0 = Debug|x64
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Debug|x64.Deploy.0 = Debug|x64
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Debug|x86.ActiveCfg = Debug|x86
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Debug|x86.Build.0 = Debug|x86
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Debug|x86.Deploy.0 = Debug|x86
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Release|ARM.ActiveCfg = Release|ARM
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Release|ARM.Build.0 = Release|ARM
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Release|ARM.Deploy.0 = Release|ARM
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Release|x64.ActiveCfg = Release|x64
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Release|x64.Build.0 = Release|x64
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Release|x64.Deploy.0 = Release|x64
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Release|x86.ActiveCfg = Release|x86
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Release|x86.Build.0 = Release|x86
+		{0FE93FAA-0C6E-41E3-9FB0-1A60DD836D1B}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

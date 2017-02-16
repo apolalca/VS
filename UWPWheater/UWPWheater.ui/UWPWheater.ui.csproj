@@ -107,6 +107,24 @@
     <None Include="UWPWheater.ui_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\img\01d.png" />
+    <Content Include="Assets\img\01n.png" />
+    <Content Include="Assets\img\02d.png" />
+    <Content Include="Assets\img\02n.png" />
+    <Content Include="Assets\img\03d.png" />
+    <Content Include="Assets\img\03n.png" />
+    <Content Include="Assets\img\04d.png" />
+    <Content Include="Assets\img\04n.png" />
+    <Content Include="Assets\img\09d.png" />
+    <Content Include="Assets\img\09n.png" />
+    <Content Include="Assets\img\10d.png" />
+    <Content Include="Assets\img\10n.png" />
+    <Content Include="Assets\img\11d.png" />
+    <Content Include="Assets\img\11n.png" />
+    <Content Include="Assets\img\13d.png" />
+    <Content Include="Assets\img\13n.png" />
+    <Content Include="Assets\img\50d.png" />
+    <Content Include="Assets\img\50n.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

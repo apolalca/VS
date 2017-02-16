@@ -20,7 +20,10 @@ namespace UWPWheater.dal
         public static async Task<RootObject> getWheater(Coord coord)
         {
             var http = new HttpClient();
-            var response = await http.GetAsync("http://api.openweathermap.org/data/2.5/weather?lat=32.77&lon=-96.79&appid=8a238bfe8b5c36bf39a7835cc9c51dd1&units=imperial");
+            String str = String.Format("http://api.openweathermap.org/data/2.5/weather?lat={0}&lon={1}&appid=8a238bfe8b5c36bf39a7835cc9c51dd1&units=imperial"
+                , coord.lat, coord.lon);
+
+            var response = await http.GetAsync(str);
             var result = await response.Content.ReadAsStringAsync();
             var serializable =  new DataContractJsonSerializer(typeof(RootObject));
 

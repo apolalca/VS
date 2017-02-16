@@ -34,9 +34,17 @@ namespace UWPWheater.ui
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             Coord c = new Coord();
+            var position = await LocationManager.GetPosition();
+
+            c.lat = position.Coordinate.Latitude;
+            c.lon = position.Coordinate.Longitude;
+
             RootObject whater = await Connection.getWheater(c);
-            String icon = String.Format("http://openweathermap.org/img/w/{0}.png", whater.weather[0].icon);
+            String icon = String.Format("ms-appx:///Assets/img/{0}.png", whater.weather[0].icon);
             ResultImg.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
+
+
+
             ResultWhater.Text = whater.name + " - " + ((int)whater.main.temp).ToString()  + " - " + whater.weather[0].description;
 
         }

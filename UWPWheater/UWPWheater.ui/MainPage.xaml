@@ -7,7 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="#FF9BECEC">
+        <StackPanel>
+            <Button Content="Get Whater" Click="Button_Click"/>
+            <TextBlock Name="ResultWhater" />
+            <Image Name="ResultImg" Width="200" Height="200" />
+        </StackPanel>
     </Grid>
 </Page>

@@ -46,7 +46,7 @@ namespace UWPWheater.ent.Models
         [DataMember]
         public double temp_max { get; set; }
         [DataMember]
-        public int sea_level { get; set; }
+        public double sea_level { get; set; }
         [DataMember]
         public double grnd_level { get; set; }
     }

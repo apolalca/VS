@@ -8,10 +8,32 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF9BECEC">
-        <StackPanel>
-            <Button Content="Get Whater" Click="Button_Click"/>
+        <Grid.RowDefinitions>
+            <!--Menu-->
+            <RowDefinition Height="1*" />
+            <!-- Content-->
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="7*" />
+        </Grid.RowDefinitions>
+
+        <RelativePanel x:Name="btn_VerTiempo" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1">
+            <Button Click="Button_Click">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Grid>
+                            <Ellipse Fill="Red" Width="100" Height="100"/>
+                            <TextBlock Text="Ver el tiempo!" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+           
+        </RelativePanel>
+        <StackPanel Grid.Row="2">
+            <ProgressBar x:Name="pb_Carga" IsIndeterminate="True" Width="200" Foreground="Black" RelativePanel.AlignVerticalCenterWithPanel="True" />
             <TextBlock Name="ResultWhater" />
             <Image Name="ResultImg" Width="200" Height="200" />
         </StackPanel>
+           
     </Grid>
 </Page>

@@ -9,6 +9,8 @@ namespace UWPWheater.ent.Models
 {
     public class LocationManager
     {
+        //https://docs.microsoft.com/en-us/windows/uwp/maps-and-location/get-location
+
         public async static Task<Geoposition> GetPosition()
         {
             var accessStatus = await Geolocator.RequestAccessAsync();

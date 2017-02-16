@@ -31,22 +31,37 @@ namespace UWPWheater.ui
             
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            btn_VerTiempo.Visibility = Visibility.Collapsed;
+            pb_Carga.IsIndeterminate = true;
+            getWheater();
+            pb_Carga.IsIndeterminate = false;
+        }
+
+        private async void getWheater()
         {
             Coord c = new Coord();
             var position = await LocationManager.GetPosition();
 
-            c.lat = position.Coordinate.Latitude;
-            c.lon = position.Coordinate.Longitude;
+            c.lat = position.Coordinate.Point.Position.Latitude;
+            c.lon = position.Coordinate.Point.Position.Longitude;
 
             RootObject whater = await Connection.getWheater(c);
-            String icon = String.Format("ms-appx:///Assets/img/{0}.png", whater.weather[0].icon);
-            ResultImg.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
-
-
-
-            ResultWhater.Text = whater.name + " - " + ((int)whater.main.temp).ToString()  + " - " + whater.weather[0].description;
-
+            try
+            {
+                String icon = String.Format("ms-appx:///Assets/img/{0}.png", whater.weather[0].icon);
+                ResultImg.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
+                ResultWhater.Text = whater.name + " - " + ((int)whater.main.temp).ToString() + " - " + whater.weather[0].description;
+            }
+            catch (Exception)
+            {
+                //Debido a que son dos hilos y no hemos dado hilos en c# suele ocurrir la primera vez que se ejecuta la aplicacion un error
+                //de nulo, ya que el primer hilo (El que pide la autorizacion para coger la localizacion) mientras espera la respuesta
+                //del usuario y no ya le ha dado tiempo al segundo de enviar el GET con la lat y la lon sin rellenar ergo sale nulo.
+                ResultWhater.Text = "Ha ocurrido un problema inesperado, por favor vuelva a intentarlo";
+                btn_VerTiempo.Visibility = Visibility.Visible;
+            }
         }
     }
 }
